@@ -1,5 +1,7 @@
 package com.demo.web;
 
+import com.demo.pojo.Stu;
+
 import javafx.print.Printer;
 
 import javax.servlet.ServletException;
@@ -26,11 +28,23 @@ public class TestWeb extends HttpServlet {
 //    pw.print("<div style='background:blue'>success 成功</div>");
 
 //    req.setAttribute("data","测试数据");
+//
+//    List<String> lists = new ArrayList<>();
+//    for (int i = 0;i<=20;i++){
+//      lists.add("abc"+i);
+//    }
 
-    List<String> lists = new ArrayList<>();
-    for (int i = 0;i<=20;i++){
-      lists.add("abc"+i);
+
+    List<Stu> lists = new ArrayList<>();
+    for (int i =0;i<20;i++){
+      Stu stu = new Stu();
+      stu.setSno(i);
+      stu.setName("abc"+i);
+      stu.setHeight(i+100);
+      lists.add(stu);
     }
+
+
     req.setAttribute("data",lists);
 
     req.getRequestDispatcher("test.jsp").forward(req,resp);

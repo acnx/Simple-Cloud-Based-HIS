@@ -4,6 +4,7 @@
   Time: 14:57
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
+<%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <html>
 <head>
     <title>Title</title>
@@ -28,7 +29,11 @@
 <table>
     <thead>
     <tr>
-        <td>绑定的数据</td>
+        <th>sno</th>
+        <th>name</th>
+        <th>height</th>
+
+
     </tr>
     </thead>
     <tbody>
@@ -47,13 +52,30 @@
         <%--}--%>
     <%--%>--%>
 
-${data}
+    <c:forEach items="${data}" var="da">
+        <tr>
+            <td>
+                ${da.sno}
+            </td>
+            <td>
+                ${da.name}
+            </td>
+            <td>
+                ${da.height}
+            </td>
+        </tr>
+
+    </c:forEach>
+
+
 
 
 
     </tbody>
 </table>
 
+
+${data}
 
 
 
