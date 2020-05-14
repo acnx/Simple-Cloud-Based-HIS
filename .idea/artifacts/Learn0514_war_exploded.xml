@@ -11,6 +11,7 @@
           <element id="file-copy" path="D:/apache-tomcat-8.0.5/webapps/examples/WEB-INF/lib/jstl.jar" />
           <element id="file-copy" path="$PROJECT_DIR$/webContent/WEB-INF/lib/mysql-connector-java-5.1.38.jar" />
           <element id="file-copy" path="$PROJECT_DIR$/webContent/WEB-INF/lib/jstl.jar" />
+          <element id="file-copy" path="$USER_HOME$/Desktop/jstl-1.2.jar" />
         </element>
       </element>
     </root>
