@@ -86,7 +86,7 @@
     <dl>
       <dt>挂号收费</dt>
       <dd>-
-        <a href="./gh.jsp" t></a>现场挂号
+        <a href="/register" t></a>现场挂号
       </dd>
       <dd>-
         <a href="./th.jsp"></a>
