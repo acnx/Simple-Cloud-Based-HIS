@@ -8,7 +8,7 @@
 <head>
     <meta charset="UTF-8">
     <title>退号</title>
-    <link rel="stylesheet" href="./css/iconfont.css" type="text/css">
+    <link rel="stylesheet" href="./static/css/iconfont.css" type="text/css">
     <style>
 
         *{
@@ -69,7 +69,7 @@
 
     <span>*</span>病历号：
     <input type="text">
-    <input class="btn iconfont" type="button"value=" &#59017 搜索">
+    <input class="btn iconfont" type="button"value=" &#58904 搜索">
 
     <div style="font-size: 20px;margin-top: 20px;margin-bottom: 20px">患者信息确认</div>
 

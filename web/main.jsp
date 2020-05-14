@@ -8,7 +8,7 @@
 <head>
   <meta charset="UTF-8">
   <title>东软云HIS系统</title>
-  <link rel="stylesheet" href="./css/iconfont.css" type="text/css">
+  <link rel="stylesheet" href="./static/css/iconfont.css" type="text/css">
   <style>
     *{margin: 0;padding: 0;}
     #header{height: 70px;color: white;background-color: #1299FF;font-size: 30px;padding-left: 20px;line-height: 70px;font-weight: bold;}
@@ -156,7 +156,7 @@
 <div id="footer">
   版权所有 翻版必究 Copyright2020 段晶晶同学
 </div>
-<script src="./js/jquery-3.5.1.min.js"></script>
+<script src="./static/js/jquery-3.5.1.min.js"></script>
 <script>
     $(function () {
         $("dt").click(function () {

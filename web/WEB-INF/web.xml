@@ -14,7 +14,7 @@
 
 <servlet>
     <servlet-name>catlist</servlet-name>
-    <servlet-class>com.demo.utils.CatListWeb</servlet-class>
+    <servlet-class>com.demo.web.CatListWeb</servlet-class>
 </servlet>
 <servlet-mapping>
     <servlet-name>catlist</servlet-name>

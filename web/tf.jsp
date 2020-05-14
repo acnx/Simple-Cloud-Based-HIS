@@ -8,7 +8,7 @@
 <head>
     <meta charset="UTF-8">
     <title>退费</title>
-    <link rel="stylesheet" href="./css/iconfont.css" type="text/css">
+    <link rel="stylesheet" href="./static/css/iconfont.css" type="text/css">
     <style>
 
         *{
