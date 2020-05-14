@@ -1,4 +1,4 @@
-<%--
+<%@ page import="java.util.List" %><%--
   User: Jayce
   Date: 2020/5/14
   Time: 11:58
@@ -69,12 +69,19 @@
       margin-top: 20px;
       text-align: center;
     }
+
+
+
+
+
   </style>
 
 </head>
 <body>
+
 <div id="header">东软云HIS系统</div>
 <div id="content">
+
   <div class="left">
     <dl>
       <dt>挂号收费</dt>
@@ -165,5 +172,9 @@
 
     })
 </script>
+
+
 </body>
+
+
 </html>

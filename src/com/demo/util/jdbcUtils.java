@@ -1,8 +1,6 @@
 package com.demo.util;
 
-
 import com.mysql.jdbc.Driver;
-
 
 import java.sql.*;
 import java.util.ArrayList;
