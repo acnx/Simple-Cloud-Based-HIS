@@ -1,5 +1,4 @@
-package com.demo.dao;
-
+package com.demo.service;
 
 import com.demo.pojo.Cat;
 
@@ -7,8 +6,8 @@ import java.util.List;
 
 /**
  * author Jayce
- * create 2020-05-14 16:45
+ * create 2020-05-14 17:19
  */
-public interface IcatDao {
+public interface IcatService {
   public List<Cat> getAll();
 }

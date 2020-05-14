@@ -1,6 +1,6 @@
 package com.demo.utils;
 
-import com.mysql.jdbc.Driver;
+
 
 import java.sql.*;
 import java.util.ArrayList;
@@ -10,26 +10,36 @@ import java.util.List;
  * author Jayce
  * create 2020-05-13 18:06
  */
-public class jdbcUtils {
+public class JdbcUtils {
   private static final String url = "jdbc:mysql://localhost:3306/his?useUnicode=true&characterEncoding=utf8";
   private static final String user = "root";
   private static final String pwd = "root";
 
-  public Connection con = null;
-  public PreparedStatement ps = null;
-  public ResultSet rs = null;
+  private Connection con = null;
+  private PreparedStatement ps = null;
+  private ResultSet rs = null;
 
   static {
-    // 使用jar包加载驱动
+//    // 使用jar包加载驱动
+//    try {
+//      new Driver();
+//    } catch (SQLException e) {
+//      e.printStackTrace();
+//    }
+
+
     try {
-      new Driver();
-    } catch (SQLException e) {
+      Class.forName("com.mysql.jdbc.Driver");
+    } catch (ClassNotFoundException e) {
       e.printStackTrace();
     }
 
   }
 
-  public Connection getConnection() {
+  public static Connection getConnection() {
+    Connection con = null;
+    PreparedStatement ps = null;
+    ResultSet rs = null;
     try {
       con = DriverManager.getConnection(url, user, pwd);
     } catch (SQLException e) {
@@ -40,7 +50,10 @@ public class jdbcUtils {
   }
 
 
-  public void close() {
+  public static void close() {
+    Connection con = null;
+    PreparedStatement ps = null;
+    ResultSet rs = null;
     try {
       if (rs != null) {
         rs.close();
@@ -62,8 +75,12 @@ public class jdbcUtils {
    * 方法的通用性
    *
    * */
-  public void execute(String sql, Object... obj) {
+  public static void execute(String sql, Object... obj) {
+    Connection con = null;
+    PreparedStatement ps = null;
+    ResultSet rs = null;
 
+    int result = 0;
     try {
 
       con = getConnection();
@@ -72,21 +89,25 @@ public class jdbcUtils {
         ps.setObject(i + 1, obj[i]);
       }
 
-      int result = ps.executeUpdate();
+      result = ps.executeUpdate();
       System.out.println(result);
 
     } catch (SQLException e) {
       e.printStackTrace();
     } finally {
-      this.close();
+      close();
     }
-
+//  return result;
 
   }
 
 
   //    public <T> void select(String sql,RowMap<T> rowMap, Object...obj) {
-  public <T> List<T> select(String sql, RowMap<T> rowMap, Object... obj) {
+  public static  <T> List<T> select(String sql, RowMap<T> rowMap, Object... obj) {
+    Connection con = null;
+    PreparedStatement ps = null;
+    ResultSet rs = null;
+
     List<T> lists = new ArrayList<T>();
     try {
 //          连接
@@ -107,7 +128,7 @@ public class jdbcUtils {
         SQLException e) {
       e.printStackTrace();
     } finally {
-      this.close();
+      close();
     }
     return lists;
   }
