@@ -33,19 +33,22 @@
     </thead>
     <tbody>
 
-    <%
-        List<String> lists = (List<String>)request.getAttribute("data");
-        for (String str:lists)
-        {
-    %>
-    <tr>
-        <td>
-            <%=str%>
-        </td>
-    </tr>
-    <%
-        }
-    %>
+    <%--<%--%>
+        <%--List<String> lists = (List<String>)request.getAttribute("data");--%>
+        <%--for (String str:lists)--%>
+        <%--{--%>
+    <%--%>--%>
+    <%--<tr>--%>
+        <%--<td>--%>
+            <%--<%=str%>--%>
+        <%--</td>--%>
+    <%--</tr>--%>
+    <%--<%--%>
+        <%--}--%>
+    <%--%>--%>
+
+
+
 
 
     </tbody>

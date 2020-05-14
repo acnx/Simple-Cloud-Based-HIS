@@ -39,7 +39,7 @@ public class Test {
           int settleId       =rs.getInt("settle_id");
           int isBook         =rs.getInt("is_book");
           /*mysql里面的datetime字段使用java的getString方法会有问题，先上课，后期解决*/
-//          String registTime  =rs.getString("regist_time");
+          String registTime  =rs.getString("regist_time");
           int registId       =rs.getInt("regist_id");
           int visitState     =rs.getInt("visit_state");
 
@@ -59,7 +59,7 @@ public class Test {
           regester.setRegistLeid(registLeid);
           regester.setSettleId(settleId);
           regester.setIsBook(isBook);
-//          regester.setRegistTime(registTime);
+          regester.setRegistTime(registTime);
           regester.setRegistId(registId);
           regester.setVisitState(visitState);
 
