@@ -129,10 +129,10 @@
         <tr>
             <td>${reg.caseNumber}</td>
             <td>${reg.realName}</td>
-            <td>${reg.idnumber}</td>
-            <td>${reg.visitDate}</td>
-            <td>${reg.homeAddress}</td>
-            <td>${reg.noon}</td>
+            <td>${reg.item}</td>
+            <td>${reg.price}</td>
+            <td>${reg.amount}</td>
+            <td>${reg.time}</td>
             <td>${reg.visitState}</td>
             <%--下面不对，这是收费界面--%>
             <td><a href="/tui?caseNumber=${reg.caseNumber}">收费</a></td>

@@ -20,7 +20,7 @@ public class RegisterDaoImpl implements IregisterDao  {
         "insert into register" +
             "(case_number,real_name,gender,age,age_type,birth_date,home_address,idnumber,settle_id," +
             "visit_date,noon,dept_id,regist_leid,user_id,is_book,visit_state)values" +
-            "(?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,1)",
+            "(?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,'已挂号')",
         register.getCaseNumber(),
         register.getRealName(),
         register.getGender(),
@@ -61,7 +61,7 @@ public class RegisterDaoImpl implements IregisterDao  {
           register.setDeptId(rs.getInt("dept_id"));
 
 
-          register.setVisitState(rs.getInt("visit_state"));
+          register.setVisitState(rs.getString("visit_state"));
 
           /*..................*/
 
@@ -80,7 +80,7 @@ public class RegisterDaoImpl implements IregisterDao  {
   public int updateOne(String caseNumber) {
 //    System.out.println("2321312321321321321321321");
 //    System.out.println("12345678"+caseNumber+"321414124");
-    return JdbcUtils.executeUpdate("UPDATE register SET visit_state=4 WHERE case_number=?",caseNumber);
+    return JdbcUtils.executeUpdate("UPDATE register SET visit_state='已退号' WHERE case_number=?",caseNumber);
 //    return 0;
   }
 }

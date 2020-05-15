@@ -92,7 +92,31 @@
         <servlet-name>tuifeicha</servlet-name>
         <url-pattern>/tuifeicha</url-pattern>
     </servlet-mapping>
+    <servlet>
+        <servlet-name>jiezhen</servlet-name>
+        <servlet-class>com.demo.web.JieZhenWeb</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>jiezhen</servlet-name>
+        <url-pattern>/jiezhen</url-pattern>
+    </servlet-mapping>
 
+    <servlet>
+        <servlet-name>getinfo</servlet-name>
+        <servlet-class>com.demo.web.GetInfoWeb</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>getinfo</servlet-name>
+        <url-pattern>/getinfo</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <servlet-name>yizhu</servlet-name>
+        <servlet-class>com.demo.web.YiZhuWeb</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>yizhu</servlet-name>
+        <url-pattern>/yizhu</url-pattern>
+    </servlet-mapping>
 
 
 

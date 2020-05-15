@@ -31,7 +31,7 @@ public class Register {
   private Integer moneyType;
   private String registTime;
   private Integer registId;
-  private Integer visitState;
+  private String visitState;
 
 
   public Integer getId() {
@@ -194,14 +194,13 @@ public class Register {
     this.registId = registId;
   }
 
-  public Integer getVisitState() {
+  public String getVisitState() {
     return visitState;
   }
 
-  public void setVisitState(Integer visitState) {
+  public void setVisitState(String visitState) {
     this.visitState = visitState;
   }
-
 
   @Override
   public String toString() {
@@ -226,7 +225,7 @@ public class Register {
         ", moneyType=" + moneyType +
         ", registTime='" + registTime + '\'' +
         ", registId=" + registId +
-        ", visitState=" + visitState +
+        ", visitState='" + visitState + '\'' +
         '}';
   }
 }
