@@ -89,7 +89,7 @@
         <a href="/register"></a>现场挂号
       </dd>
       <dd>-
-        <a href="./th.jsp"></a>
+        <a href="/tuihao"></a>
         退号</dd>
       <dd>-
         <a href="./sf.jsp"></a>

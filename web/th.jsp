@@ -62,7 +62,7 @@
     </style>
 </head>
 <body>
-${reg}
+
 
 <div class="content">
     <form action="getRegister">

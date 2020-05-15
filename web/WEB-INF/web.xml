@@ -48,4 +48,13 @@
         <url-pattern>/tui</url-pattern>
     </servlet-mapping>
 
+    <servlet>
+        <servlet-name>tuihao</servlet-name>
+        <servlet-class>com.demo.web.TuiHaoWeb</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>tuihao</servlet-name>
+        <url-pattern>/tuihao</url-pattern>
+    </servlet-mapping>
+
 </web-app>

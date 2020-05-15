@@ -103,7 +103,7 @@
         </div>
         <div class="item1">
             身份证号：<br>
-            <input name="shenfenzheng" type="text"style="width: 275px" placeholder="请输入身份证号">
+            <input name="idnumber" type="text"style="width: 275px" placeholder="请输入身份证号">
         </div>
         <div class="item">
             <span>*</span>结算类别：<br>
