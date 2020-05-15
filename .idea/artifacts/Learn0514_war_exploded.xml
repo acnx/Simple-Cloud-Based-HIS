@@ -2,10 +2,10 @@
   <artifact type="exploded-war" name="Learn0514:war exploded">
     <output-path>$PROJECT_DIR$/out/artifacts/Learn0514_war_exploded</output-path>
     <root id="root">
-      <element id="javaee-facet-resources" facet="Learn0514/web/Web" />
+      <element id="javaee-facet-resources" facet="yhis/web/Web" />
       <element id="directory" name="WEB-INF">
         <element id="directory" name="classes">
-          <element id="module-output" name="Learn0514" />
+          <element id="module-output" name="yhis" />
         </element>
         <element id="directory" name="lib">
           <element id="file-copy" path="D:/apache-tomcat-8.0.5/webapps/examples/WEB-INF/lib/jstl.jar" />

@@ -3,6 +3,7 @@
   Date: 2020/5/14
   Time: 12:50
 --%>
+
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <head>
@@ -109,20 +110,6 @@
             </tbody>
         </table>
 
-    <%--<ul>--%>
-        <%--<li>病历号</li>--%>
-        <%--<li>姓名</li>--%>
-        <%--<li>身份证号</li>--%>
-        <%--<li>挂号日期</li>--%>
-        <%--<li>挂号午别</li>--%>
-        <%--<li>看诊科室</li>--%>
-        <%--<li>看诊状态</li>--%>
-        <%--<li>操作</li>--%>
-    <%--</ul>--%>
-    <%--<br>--%>
-    <%--<div style="clear: left"></div>--%>
-    <%--<hr>--%>
-    <%--<div style="text-align: center;line-height: 100px">暂无数据</div>--%>
     </form>
 </div>
 
