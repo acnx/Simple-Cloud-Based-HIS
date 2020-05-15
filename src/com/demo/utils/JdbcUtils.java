@@ -75,7 +75,7 @@ public class JdbcUtils {
    * 方法的通用性
    *
    * */
-  public static void execute(String sql, Object... obj) {
+  public static int executeQuery(String sql, Object... obj) {
     Connection con = null;
     PreparedStatement ps = null;
     ResultSet rs = null;
@@ -97,7 +97,7 @@ public class JdbcUtils {
     } finally {
       close();
     }
-//  return result;
+  return result;
 
   }
 

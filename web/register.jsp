@@ -61,7 +61,7 @@
 </head>
 <body>
 <div class="content">
-    <form action="putData">
+    <form action="putData" method="post">
         <span >*</span> 发票号：<input name="fapiaohao" value="123456" type="text"> <input type="submit" value="&#59564 挂号" class="btn iconfont"> <input type="submit" value="&#59577 清空" class="btn iconfont">
         <div style="font-size: 20px;margin-top: 20px;margin-bottom: 20px">挂号信息</div>
 
@@ -86,19 +86,19 @@
             <span>*</span>年龄：<br>
             <input name="age" type="text" placeholder="请输入年龄">
             <select name="">
-                <option value="岁">岁</option>
-                <option value="月">月</option>
-                <option value="天">天</option>
+                <option value="1">岁</option>
+                <option value="2">月</option>
+                <option value="3">天</option>
             </select>
         </div>
 
         <div class="item">
             出生日期：<br>
-            <input name="birthday" placeholder="请输入出生日期" type="text">
+            <input name="birthDate" placeholder="请输入出生日期" type="text">
         </div>
         <div class="item1">
             家庭住址：<br>
-            <input name="adrr" placeholder="请输入家庭地址" type="text" style="width: 390px">
+            <input name="homeAddress" placeholder="请输入家庭地址" type="text" style="width: 390px">
 
         </div>
         <div class="item1">
@@ -107,52 +107,52 @@
         </div>
         <div class="item">
             <span>*</span>结算类别：<br>
-            <select name="">
-                <option value="自费">自费</option>
-                <option value="医保">医保</option>
-                <option value="社保">社保</option>
+            <select name="settleId">
+                <option value="1">自费</option>
+                <option value="2">医保</option>
+                <option value="3">社保</option>
             </select>
         </div>
         <div class="item">
             <span>*</span>看诊日期：<br>
-            <input type="text" placeholder="请输入看诊日期">
+            <input name="visitDate" type="text" placeholder="请输入看诊日期">
         </div>
         <div class="item">
             <span>*</span>午别：<br>
-            <select name="" >
+            <select name="noon" >
                 <option value="上午">上午</option>
                 <option value="下午">下午</option>
             </select>
         </div>
         <div class="item1">
             <span>*</span>挂号科室：<br>
-            <select name="" id="">
-                <option value="内科">内科</option>
-                <option value="外科">外科</option>
-                <option value="骨科">骨科</option>
+            <select name="deptId" id="">
+                <option value="1">内科</option>
+                <option value="2">外科</option>
+                <option value="3">骨科</option>
             </select>
         </div>
         <div class="item">
             <span>*</span>号别：<br>
-            <select name="" >
-                <option value="免费">免费</option>
-                <option value="专家">专家</option>
+            <select name="registerLeid" >
+                <option value="1">免费号</option>
+                <option value="1">专家号</option>
             </select>
         </div>
 
         <div class="item">
             <span>*</span>看诊医生：<br>
-            <select name="" >
-                <option value="王医生">王医生</option>
-                <option value="赵医生">赵医生</option>
-                <option value="李医生">李医生</option>
-                <option value="张医生">张医生</option>
+            <select name="userId" >
+                <option value="1">王医生</option>
+                <option value="2">赵医生</option>
+                <option value="3">李医生</option>
+                <option value="4">张医生</option>
             </select>
 
         </div>
         <div class="item">
             初始号额：<br>
-            <input type="text" placeholder="初试号额">
+            <input type="text" placeholder="初始号额">
 
         </div>
         <div class="item1">
@@ -161,20 +161,20 @@
         </div>
         <div class="item">
             病历本：
-            <input type="checkbox" name="isBook" style="height: auto;margin-top: 25px">
+            <input type="checkbox" name="isBook" value="1" style="height: auto;margin-top: 25px">
 
         </div>
         <div class="item">
             <span>*</span>应收金额：<br>
-            <input type="text" placeholder="应收金额">
+            <input name="money" type="text" placeholder="应收金额">
 
         </div>
         <div class="item">
             <span>*</span>收费方式：<br>
-            <select name="" >
-                <option value="现金">现金</option>
-                <option value="医保卡">医保卡</option>
-                <option value="微信">微信</option>
+            <select name="moneyType" >
+                <option value="1">现金</option>
+                <option value="2">医保卡</option>
+                <option value="3">微信</option>
             </select>
         </div>
 

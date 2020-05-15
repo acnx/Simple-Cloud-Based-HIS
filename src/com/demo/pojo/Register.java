@@ -1,10 +1,10 @@
-package demo.utils;
+package com.demo.pojo;
 
 /**
  * author Jayce
  * create 2020-05-13 18:06
  */
-public class Regester {
+public class Register {
 
 
 //
@@ -15,18 +15,20 @@ public class Regester {
   private String caseNumber;
   private String realName;
   private String gender;
-  private String idNumber;
-  private String birthDate;
   private Integer age;
   private Integer ageType;
+  private String birthDate;
   private String homeAddress;
+  private String idNumber;
+  private Integer settleId;
   private String visitDate;
   private String noon;
   private Integer deptId;
-  private Integer userId;
   private Integer registLeid;
-  private Integer settleId;
+  private Integer userId;
   private Integer isBook;
+  private float money;
+  private Integer moneyType;
   private String registTime;
   private Integer registId;
   private Integer visitState;
@@ -63,22 +65,6 @@ public class Regester {
     this.gender = gender;
   }
 
-  public String getIdNumber() {
-    return idNumber;
-  }
-
-  public void setIdNumber(String idNumber) {
-    this.idNumber = idNumber;
-  }
-
-  public String getBirthDate() {
-    return birthDate;
-  }
-
-  public void setBirthDate(String birthDate) {
-    this.birthDate = birthDate;
-  }
-
   public Integer getAge() {
     return age;
   }
@@ -95,12 +81,36 @@ public class Regester {
     this.ageType = ageType;
   }
 
+  public String getBirthDate() {
+    return birthDate;
+  }
+
+  public void setBirthDate(String birthDate) {
+    this.birthDate = birthDate;
+  }
+
   public String getHomeAddress() {
     return homeAddress;
   }
 
   public void setHomeAddress(String homeAddress) {
     this.homeAddress = homeAddress;
+  }
+
+  public String getIdNumber() {
+    return idNumber;
+  }
+
+  public void setIdNumber(String idNumber) {
+    this.idNumber = idNumber;
+  }
+
+  public Integer getSettleId() {
+    return settleId;
+  }
+
+  public void setSettleId(Integer settleId) {
+    this.settleId = settleId;
   }
 
   public String getVisitDate() {
@@ -127,14 +137,6 @@ public class Regester {
     this.deptId = deptId;
   }
 
-  public Integer getUserId() {
-    return userId;
-  }
-
-  public void setUserId(Integer userId) {
-    this.userId = userId;
-  }
-
   public Integer getRegistLeid() {
     return registLeid;
   }
@@ -143,12 +145,12 @@ public class Regester {
     this.registLeid = registLeid;
   }
 
-  public Integer getSettleId() {
-    return settleId;
+  public Integer getUserId() {
+    return userId;
   }
 
-  public void setSettleId(Integer settleId) {
-    this.settleId = settleId;
+  public void setUserId(Integer userId) {
+    this.userId = userId;
   }
 
   public Integer getIsBook() {
@@ -157,6 +159,22 @@ public class Regester {
 
   public void setIsBook(Integer isBook) {
     this.isBook = isBook;
+  }
+
+  public float getMoney() {
+    return money;
+  }
+
+  public void setMoney(float money) {
+    this.money = money;
+  }
+
+  public Integer getMoneyType() {
+    return moneyType;
+  }
+
+  public void setMoneyType(Integer moneyType) {
+    this.moneyType = moneyType;
   }
 
   public String getRegistTime() {
@@ -183,7 +201,6 @@ public class Regester {
     this.visitState = visitState;
   }
 
-
   @Override
   public String toString() {
     return "Regester{" +
@@ -191,21 +208,24 @@ public class Regester {
         ", caseNumber='" + caseNumber + '\'' +
         ", realName='" + realName + '\'' +
         ", gender='" + gender + '\'' +
-        ", idNumber='" + idNumber + '\'' +
-        ", birthDate='" + birthDate + '\'' +
         ", age=" + age +
         ", ageType=" + ageType +
+        ", birthDate='" + birthDate + '\'' +
         ", homeAddress='" + homeAddress + '\'' +
+        ", idNumber='" + idNumber + '\'' +
+        ", settleId=" + settleId +
         ", visitDate='" + visitDate + '\'' +
         ", noon='" + noon + '\'' +
         ", deptId=" + deptId +
-        ", userId=" + userId +
         ", registLeid=" + registLeid +
-        ", settleId=" + settleId +
+        ", userId=" + userId +
         ", isBook=" + isBook +
+        ", money=" + money +
+        ", moneyType=" + moneyType +
         ", registTime='" + registTime + '\'' +
         ", registId=" + registId +
         ", visitState=" + visitState +
         '}';
   }
 }
+
