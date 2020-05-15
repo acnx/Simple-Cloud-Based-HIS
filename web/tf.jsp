@@ -129,13 +129,13 @@
             <tr>
                 <td>${reg.caseNumber}</td>
                 <td>${reg.realName}</td>
-                <td>${reg.idnumber}</td>
+                <td>${reg.item}</td>
+                <td>${reg.price}</td>
+                <td>${reg.amount}</td>
                 <td>${reg.visitDate}</td>
-                <td>${reg.homeAddress}</td>
-                <td>${reg.noon}</td>
                 <td>${reg.visitState}</td>
                 <%--下面跳转不对--%>
-                <td><a href="/tui?caseNumber=${reg.caseNumber}">退费</a></td>
+                <td><a href="/tuifeila?caseNumber=${reg.caseNumber}">退费</a></td>
             </tr>
             </tbody>
         </table>

@@ -63,6 +63,11 @@ public class RegisterDaoImpl implements IregisterDao  {
 
           register.setVisitState(rs.getString("visit_state"));
 
+          register.setItem(rs.getString("item"));
+          register.setPrice(rs.getInt("price"));
+          register.setAmount(rs.getInt("amount"));
+          register.setNote(rs.getString("note"));
+
           /*..................*/
 
 
@@ -83,6 +88,33 @@ public class RegisterDaoImpl implements IregisterDao  {
     return JdbcUtils.executeUpdate("UPDATE register SET visit_state='已退号' WHERE case_number=?",caseNumber);
 //    return 0;
   }
+
+  @Override
+  public int KaiYizhu(Register register) {
+
+
+    return JdbcUtils.executeUpdate("update register set item = ?,price=?,amount=?,note=?,time=now(),visit_state='医生接诊' where case_number=?",
+        register.getItem(),
+        register.getPrice(),
+        register.getAmount(),
+        register.getNote(),
+        register.getCaseNumber()
+
+
+        );
+  }
+
+  @Override
+  public int shoufeila(String caseNumber) {
+    return JdbcUtils.executeUpdate("UPDATE register SET visit_state='已收费' WHERE case_number=?",caseNumber);
+  }
+
+  @Override
+  public int tuifeila(String caseNumber) {
+    return JdbcUtils.executeUpdate("UPDATE register SET visit_state='已退费' WHERE case_number=?",caseNumber);
+  }
+
+
 }
 
 

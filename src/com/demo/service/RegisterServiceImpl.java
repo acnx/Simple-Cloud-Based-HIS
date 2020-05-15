@@ -24,5 +24,21 @@ public class RegisterServiceImpl implements IregisterService {
   public int updateOne(String caseNumber) {
     return dao.updateOne(caseNumber);
   }
+
+  @Override
+  public int KaiYizhu(Register register) {
+    return dao.KaiYizhu(register);
+  }
+
+  @Override
+  public int shoufeila(String caseNumber) {
+    return dao.shoufeila(caseNumber);
+  }
+
+  @Override
+  public int tuifeila(String caseNumber) {
+    return dao.tuifeila(caseNumber);
+  }
+
 }
 

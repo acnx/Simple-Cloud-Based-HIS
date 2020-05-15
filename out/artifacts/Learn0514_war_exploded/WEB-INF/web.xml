@@ -118,6 +118,24 @@
         <url-pattern>/yizhu</url-pattern>
     </servlet-mapping>
 
+    <servlet>
+        <servlet-name>shoufeila</servlet-name>
+        <servlet-class>com.demo.web.ShouFeiLaWeb</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>shoufeila</servlet-name>
+        <url-pattern>/shoufeila</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>tuifeila</servlet-name>
+        <servlet-class>com.demo.web.TuiFeiLaWeb</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>tuifeila</servlet-name>
+        <url-pattern>/tuifeila</url-pattern>
+    </servlet-mapping>
+
 
 
 

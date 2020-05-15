@@ -132,10 +132,10 @@
             <td>${reg.item}</td>
             <td>${reg.price}</td>
             <td>${reg.amount}</td>
-            <td>${reg.time}</td>
+            <td>${reg.visitDate}</td>
             <td>${reg.visitState}</td>
             <%--下面不对，这是收费界面--%>
-            <td><a href="/tui?caseNumber=${reg.caseNumber}">收费</a></td>
+            <td><a href="/shoufeila?caseNumber=${reg.caseNumber}">收费</a></td>
         </tr>
         </tbody>
     </table>

@@ -101,14 +101,18 @@
         </div>
         <div class="item1">
             看诊状态：<br>
-            <input name="idnumber" value="${reg.idnumber}" type="text"style="width: 275px" placeholder="看诊状态">
+            <input name="visitState" value="${reg.visitState}" type="text"style="width: 275px" placeholder="看诊状态">
         </div>
 
         <div style="clear: left"></div>
+
+    </form>
+    <form action="yizhu" method="post">
         <div style="font-size: 20px;margin-top: 20px;margin-bottom: 20px">患者消费信息</div>
         <table>
             <thead>
             <tr>
+                <th>病历号</th>
                 <th>项目名称</th>
                 <th>单价</th>
                 <th>数量</th>
@@ -119,6 +123,9 @@
 
             <tbody>
             <tr>
+                <td>
+                    <input name="caseNumber" value="${reg.caseNumber}" type="text">
+                </td>
                 <td>
                     <input name="item" type="text">
                 </td>
@@ -133,10 +140,9 @@
                 </td>
 
                 <%--下面不对，这是收费界面--%>
-                <td><a style="padding:1px 3px;border: solid 1px #787878" href="">
-
-                    执行
-                </a></td>
+                <td>
+                    <input type="submit" value="执行">
+                </td>
             </tr>
             </tbody>
         </table>

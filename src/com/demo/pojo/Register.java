@@ -32,7 +32,11 @@ public class Register {
   private String registTime;
   private Integer registId;
   private String visitState;
-
+  private String item;
+  private Integer price;
+  private Integer amount;
+  private String time;
+  private String note;
 
   public Integer getId() {
     return id;
@@ -202,6 +206,47 @@ public class Register {
     this.visitState = visitState;
   }
 
+  public String getItem() {
+    return item;
+  }
+
+  public void setItem(String item) {
+    this.item = item;
+  }
+
+  public Integer getPrice() {
+    return price;
+  }
+
+  public void setPrice(Integer price) {
+    this.price = price;
+  }
+
+  public Integer getAmount() {
+    return amount;
+  }
+
+  public void setAmount(Integer amount) {
+    this.amount = amount;
+  }
+
+  public String getTime() {
+    return time;
+  }
+
+  public void setTime(String time) {
+    this.time = time;
+  }
+
+  public String getNote() {
+    return note;
+  }
+
+  public void setNote(String note) {
+    this.note = note;
+  }
+
+
   @Override
   public String toString() {
     return "Register{" +
@@ -226,6 +271,11 @@ public class Register {
         ", registTime='" + registTime + '\'' +
         ", registId=" + registId +
         ", visitState='" + visitState + '\'' +
+        ", item='" + item + '\'' +
+        ", price=" + price +
+        ", amount=" + amount +
+        ", time='" + time + '\'' +
+        ", note='" + note + '\'' +
         '}';
   }
 }
