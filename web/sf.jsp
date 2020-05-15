@@ -85,6 +85,7 @@
 <body>
 
 <div class="content">
+    <h3 style="text-align: center">收费</h3>
     <form action="getfei" method="post">
     <div style="font-size: 20px;margin-top: 20px;margin-bottom: 20px">患者信息查询</div>
 
@@ -94,19 +95,19 @@
 
     <div style="font-size: 20px;margin-top: 20px;margin-bottom: 20px">患者信息确认</div>
 
-    <div class="item">
-        <span>*</span>姓名：<br>
-        <input name="realName" placeholder="姓名" type="text">
-    </div>
-    <div class="item1">
-        家庭住址：<br>
-        <input name="adrr" placeholder="家庭地址" type="text" style="width: 390px">
+        <div class="item">
+            <span>*</span>姓名：<br>
+            <input name="realName" value="${reg.realName}" placeholder="姓名" type="text">
+        </div>
+        <div class="item1">
+            家庭住址：<br>
+            <input name="homeAddress" value="${reg.homeAddress}" placeholder="家庭地址" type="text" style="width: 390px">
 
-    </div>
-    <div class="item1">
-        身份证号：<br>
-        <input name="shenfenzheng" type="text"style="width: 275px" placeholder="身份证号">
-    </div>
+        </div>
+        <div class="item1">
+            身份证号：<br>
+            <input name="idnumber" value="${reg.idnumber}" type="text"style="width: 275px" placeholder="身份证号">
+        </div>
     <div style="clear: left"></div>
     <div style="font-size: 20px;margin-top: 20px;margin-bottom: 20px">患者消费信息</div>
     <table>
@@ -133,7 +134,8 @@
             <td>${reg.homeAddress}</td>
             <td>${reg.noon}</td>
             <td>${reg.visitState}</td>
-            <td><a href="/tui?caseNumber=${reg.caseNumber}">缴费</a></td>
+            <%--下面不对，这是收费界面--%>
+            <td><a href="/tui?caseNumber=${reg.caseNumber}">收费</a></td>
         </tr>
         </tbody>
     </table>

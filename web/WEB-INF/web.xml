@@ -67,6 +67,15 @@
     </servlet-mapping>
 
     <servlet>
+        <servlet-name>postfei</servlet-name>
+        <servlet-class>com.demo.web.PostFeiWeb</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>postfei</servlet-name>
+        <url-pattern>/postfei</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
         <servlet-name>getfei</servlet-name>
         <servlet-class>com.demo.web.GetFeiWeb</servlet-class>
     </servlet>
@@ -74,6 +83,17 @@
         <servlet-name>getfei</servlet-name>
         <url-pattern>/getfei</url-pattern>
     </servlet-mapping>
+
+    <servlet>
+        <servlet-name>tuifeicha</servlet-name>
+        <servlet-class>com.demo.web.TuiFeiCha</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>tuifeicha</servlet-name>
+        <url-pattern>/tuifeicha</url-pattern>
+    </servlet-mapping>
+
+
 
 
 

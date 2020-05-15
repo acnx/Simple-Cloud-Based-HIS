@@ -85,7 +85,8 @@
 <body>
 
 <div class="content">
-    <form action="getfei" method="post">
+    <h3 style="text-align: center">退费</h3>
+    <form action="tuifeicha" method="post">
         <div style="font-size: 20px;margin-top: 20px;margin-bottom: 20px">患者信息查询</div>
 
         <span>*</span>病历号：
@@ -96,16 +97,16 @@
 
         <div class="item">
             <span>*</span>姓名：<br>
-            <input name="realName" placeholder="姓名" type="text">
+            <input name="realName" value="${reg.realName}" placeholder="姓名" type="text">
         </div>
         <div class="item1">
             家庭住址：<br>
-            <input name="adrr" placeholder="家庭地址" type="text" style="width: 390px">
+            <input name="homeAddress" value="${reg.homeAddress}" placeholder="家庭地址" type="text" style="width: 390px">
 
         </div>
         <div class="item1">
             身份证号：<br>
-            <input name="shenfenzheng" type="text"style="width: 275px" placeholder="身份证号">
+            <input name="idnumber" value="${reg.idnumber}" type="text"style="width: 275px" placeholder="身份证号">
         </div>
         <div style="clear: left"></div>
         <div style="font-size: 20px;margin-top: 20px;margin-bottom: 20px">患者消费信息</div>
@@ -133,6 +134,7 @@
                 <td>${reg.homeAddress}</td>
                 <td>${reg.noon}</td>
                 <td>${reg.visitState}</td>
+                <%--下面跳转不对--%>
                 <td><a href="/tui?caseNumber=${reg.caseNumber}">退费</a></td>
             </tr>
             </tbody>
