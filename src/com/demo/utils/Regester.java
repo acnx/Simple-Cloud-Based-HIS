@@ -15,7 +15,7 @@ public class Regester {
   private String caseNumber;
   private String realName;
   private String gender;
-  private String idNumber;
+  private String idnumber;
   private String birthDate;
   private Integer age;
   private Integer ageType;
@@ -64,11 +64,11 @@ public class Regester {
   }
 
   public String getIdNumber() {
-    return idNumber;
+    return idnumber;
   }
 
   public void setIdNumber(String idNumber) {
-    this.idNumber = idNumber;
+    this.idnumber = idNumber;
   }
 
   public String getBirthDate() {
@@ -191,7 +191,7 @@ public class Regester {
         ", caseNumber='" + caseNumber + '\'' +
         ", realName='" + realName + '\'' +
         ", gender='" + gender + '\'' +
-        ", idNumber='" + idNumber + '\'' +
+        ", idnumber='" + idnumber + '\'' +
         ", birthDate='" + birthDate + '\'' +
         ", age=" + age +
         ", ageType=" + ageType +

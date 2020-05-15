@@ -62,47 +62,69 @@
     </style>
 </head>
 <body>
+${reg}
 
 <div class="content">
-
+    <form action="getRegister">
     <div style="font-size: 20px;margin-top: 20px;margin-bottom: 20px">患者信息查询</div>
 
     <span>*</span>病历号：
-    <input type="text">
-    <input class="btn iconfont" type="button"value=" &#58904 搜索">
+    <input name="caseNumber" value="${reg.caseNumber}" type="text">
+    <input class="btn iconfont" type="submit"value=" &#58904 搜索">
 
     <div style="font-size: 20px;margin-top: 20px;margin-bottom: 20px">患者信息确认</div>
 
     <div class="item">
         <span>*</span>姓名：<br>
-        <input name="realName" placeholder="姓名" type="text">
+        <input name="realName" value="${reg.realName}" placeholder="姓名" type="text">
     </div>
     <div class="item1">
         家庭住址：<br>
-        <input name="adrr" placeholder="家庭地址" type="text" style="width: 390px">
+        <input name="homeAddress" value="${reg.homeAddress}" placeholder="家庭地址" type="text" style="width: 390px">
 
     </div>
     <div class="item1">
         身份证号：<br>
-        <input name="shenfenzheng" type="text"style="width: 275px" placeholder="身份证号">
+        <input name="idnumber" value="${reg.idnumber}" type="text"style="width: 275px" placeholder="身份证号">
     </div>
     <div style="clear: left"></div>
     <div style="font-size: 20px;margin-top: 20px;margin-bottom: 20px">患者挂号信息</div>
 
-    <ul>
-        <li>病历号</li>
-        <li>姓名</li>
-        <li>身份证号</li>
-        <li>挂号日期</li>
-        <li>挂号午别</li>
-        <li>看诊科室</li>
-        <li>看诊状态</li>
-        <li>操作</li>
-    </ul>
-    <br>
-    <div style="clear: left"></div>
-    <hr>
-    <div style="text-align: center;line-height: 100px">暂无数据</div>
+        <table>
+            <thead>
+            <tr>
+                <th>姓名</th>
+                <th>身份证号</th>
+                <th>家庭住址</th>
+                <%--<th>身份证号</th>--%>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td>${reg.realName}</td>
+                <td>${reg.idnumber}</td>
+                <td>${reg.homeAddress}</td>
+                <td><a href="/tui?caseNumber=${reg.caseNumber}">退号</a></td>
+            </tr>
+            </tbody>
+        </table>
+
+    <%--<ul>--%>
+        <%--<li>病历号</li>--%>
+        <%--<li>姓名</li>--%>
+        <%--<li>身份证号</li>--%>
+        <%--<li>挂号日期</li>--%>
+        <%--<li>挂号午别</li>--%>
+        <%--<li>看诊科室</li>--%>
+        <%--<li>看诊状态</li>--%>
+        <%--<li>操作</li>--%>
+    <%--</ul>--%>
+    <%--<br>--%>
+    <%--<div style="clear: left"></div>--%>
+    <%--<hr>--%>
+    <%--<div style="text-align: center;line-height: 100px">暂无数据</div>--%>
+    </form>
 </div>
+
 </body>
 </html>

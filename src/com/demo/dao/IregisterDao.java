@@ -8,4 +8,5 @@ import com.demo.pojo.Register;
  */
 public interface IregisterDao{
   public  int add(Register register);
+  public Register getOne(String caseNumber);
 }

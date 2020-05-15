@@ -19,7 +19,7 @@ public class Register {
   private Integer ageType;
   private String birthDate;
   private String homeAddress;
-  private String idNumber;
+  private String idnumber;
   private Integer settleId;
   private String visitDate;
   private String noon;
@@ -32,6 +32,7 @@ public class Register {
   private String registTime;
   private Integer registId;
   private Integer visitState;
+
 
   public Integer getId() {
     return id;
@@ -97,12 +98,12 @@ public class Register {
     this.homeAddress = homeAddress;
   }
 
-  public String getIdNumber() {
-    return idNumber;
+  public String getIdnumber() {
+    return idnumber;
   }
 
-  public void setIdNumber(String idNumber) {
-    this.idNumber = idNumber;
+  public void setIdnumber(String idnumber) {
+    this.idnumber = idnumber;
   }
 
   public Integer getSettleId() {
@@ -201,9 +202,10 @@ public class Register {
     this.visitState = visitState;
   }
 
+
   @Override
   public String toString() {
-    return "Regester{" +
+    return "Register{" +
         "id=" + id +
         ", caseNumber='" + caseNumber + '\'' +
         ", realName='" + realName + '\'' +
@@ -212,7 +214,7 @@ public class Register {
         ", ageType=" + ageType +
         ", birthDate='" + birthDate + '\'' +
         ", homeAddress='" + homeAddress + '\'' +
-        ", idNumber='" + idNumber + '\'' +
+        ", idnumber='" + idnumber + '\'' +
         ", settleId=" + settleId +
         ", visitDate='" + visitDate + '\'' +
         ", noon='" + noon + '\'' +

@@ -85,7 +85,7 @@
         <div class="item1">
             <span>*</span>年龄：<br>
             <input name="age" type="text" placeholder="请输入年龄">
-            <select name="">
+            <select name="ageType">
                 <option value="1">岁</option>
                 <option value="2">月</option>
                 <option value="3">天</option>
@@ -177,9 +177,6 @@
                 <option value="3">微信</option>
             </select>
         </div>
-
-
-
     </form>
 </div>
 </body>

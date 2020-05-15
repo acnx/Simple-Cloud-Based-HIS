@@ -30,4 +30,22 @@
         <url-pattern>*</url-pattern>
     </filter-mapping>
 
+    <servlet>
+        <servlet-name>getRegister</servlet-name>
+        <servlet-class>com.demo.web.GetRegisterWeb</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>getRegister</servlet-name>
+        <url-pattern>/getRegister</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>tui</servlet-name>
+        <servlet-class>com.demo.web.TuiWeb</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>tui</servlet-name>
+        <url-pattern>/tui</url-pattern>
+    </servlet-mapping>
+
 </web-app>

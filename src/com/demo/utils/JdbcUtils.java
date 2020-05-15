@@ -75,7 +75,7 @@ public class JdbcUtils {
    * 方法的通用性
    *
    * */
-  public static int executeQuery(String sql, Object... obj) {
+  public static int executeUpdate(String sql, Object... obj) {
     Connection con = null;
     PreparedStatement ps = null;
     ResultSet rs = null;
@@ -102,8 +102,11 @@ public class JdbcUtils {
   }
 
 
+
+
+
   //    public <T> void select(String sql,RowMap<T> rowMap, Object...obj) {
-  public static  <T> List<T> select(String sql, RowMap<T> rowMap, Object... obj) {
+  public static  <T> List<T> executeQuary(String sql, RowMap<T> rowMap, Object... obj) {
     Connection con = null;
     PreparedStatement ps = null;
     ResultSet rs = null;
@@ -132,6 +135,37 @@ public class JdbcUtils {
     }
     return lists;
   }
+
+  //    public <T> void select(String sql,RowMap<T> rowMap, Object...obj) {
+  public static  <T> T executeQuaryOne(String sql, RowMap<T> rowMap, Object... obj) {
+    Connection con = null;
+    PreparedStatement ps = null;
+    ResultSet rs = null;
+
+    T t = null;
+    try {
+//          连接
+      con = getConnection();
+      ps = con.prepareStatement(sql);
+      if (obj != null) {
+        for (int i = 0; i < obj.length; i++) {
+          ps.setObject(i + 1, obj[i]);
+        }
+      }
+//          执行
+      rs = ps.executeQuery();
+      while (rs.next()) {
+        t = rowMap.rowMapping(rs);
+      }
+    } catch (
+        SQLException e) {
+      e.printStackTrace();
+    } finally {
+      close();
+    }
+    return t;
+  }
+
 
 
 }

@@ -14,4 +14,9 @@ public class RegisterServiceImpl implements IregisterService {
   public int add(Register register) {
     return dao.add(register);
   }
+
+  @Override
+  public Register getOne(String caseNumber) {
+    return dao.getOne(caseNumber);
+  }
 }
