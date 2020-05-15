@@ -76,11 +76,6 @@ public class PutDataWeb extends HttpServlet {
 //    System.out.println(a);
     resp.sendRedirect("register");
 
-
-
-
-
-
 //    把获取到的表单上的值赋给对象
 //
 //

@@ -50,15 +50,16 @@ public class RegisterDaoImpl implements IregisterDao  {
 
         try {
 
-//          register.setIdNumber(caseNumber);
-//          register.setHomeAddress(homeAddress);
-
-
 
           register.setCaseNumber(rs.getString("case_number"));
           register.setRealName(rs.getString("real_name"));
-          register.setHomeAddress(rs.getString("home_address"));
           register.setIdnumber(rs.getString("idnumber"));
+          register.setVisitDate(rs.getString("visit_date"));
+          register.setNoon(rs.getString("noon"));
+          /*数据库里面的123怎么转换为文字放到前端页面*/
+          register.setDeptId(rs.getInt("dept_id"));
+
+
           register.setVisitState(rs.getInt("visit_state"));
 
           /*..................*/

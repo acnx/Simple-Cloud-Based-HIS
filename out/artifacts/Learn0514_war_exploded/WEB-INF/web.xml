@@ -57,6 +57,14 @@
         <url-pattern>/tuihao</url-pattern>
     </servlet-mapping>
 
+    <servlet>
+        <servlet-name>getMoney</servlet-name>
+        <servlet-class>com.demo.web.GetMonWeb</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>getMoney</servlet-name>
+        <url-pattern>/getmon</url-pattern>
+    </servlet-mapping>
 
 
 

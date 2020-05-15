@@ -1,0 +1,44 @@
+{
+  "id": "1814176",
+  "name": "HisSx",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "751120",
+      "name": "find",
+      "font_class": "0201chazhao",
+      "unicode": "e604",
+      "unicode_decimal": 58884
+    },
+    {
+      "icon_id": "9918727",
+      "name": "HTSCIT_find1",
+      "font_class": "HTSCIT_find",
+      "unicode": "e689",
+      "unicode_decimal": 59017
+    },
+    {
+      "icon_id": "902003",
+      "name": "find",
+      "font_class": "find",
+      "unicode": "e618",
+      "unicode_decimal": 58904
+    },
+    {
+      "icon_id": "11372640",
+      "name": "编辑",
+      "font_class": "bianji",
+      "unicode": "e8ac",
+      "unicode_decimal": 59564
+    },
+    {
+      "icon_id": "11372705",
+      "name": "刷新",
+      "font_class": "shuaxin",
+      "unicode": "e8b9",
+      "unicode_decimal": 59577
+    }
+  ]
+}

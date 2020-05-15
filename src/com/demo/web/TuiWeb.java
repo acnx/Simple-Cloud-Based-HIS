@@ -18,7 +18,7 @@ public class TuiWeb extends HttpServlet {
   @Override
   protected void service(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
     String caseNumber = req.getParameter("caseNumber");
-    System.out.println(caseNumber);
+//    System.out.println(caseNumber);
     service.updateOne(caseNumber);
     resp.sendRedirect("tuihao");
 
