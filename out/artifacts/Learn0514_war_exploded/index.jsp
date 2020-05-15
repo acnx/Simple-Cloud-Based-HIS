@@ -92,7 +92,7 @@
         <a href="/tuihao"></a>
         退号</dd>
       <dd>
-        <a href="/getmon"></a>
+        <a href="/shoufei"></a>
         收费</dd>
       <dd>
         <a href="tf.jsp"></a>

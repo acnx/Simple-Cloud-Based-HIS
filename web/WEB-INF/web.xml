@@ -57,6 +57,26 @@
         <url-pattern>/tuihao</url-pattern>
     </servlet-mapping>
 
+    <servlet>
+        <servlet-name>shoufei</servlet-name>
+        <servlet-class>com.demo.web.ShouFeiWeb</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>shoufei</servlet-name>
+        <url-pattern>/shoufei</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>getfei</servlet-name>
+        <servlet-class>com.demo.web.GetFeiWeb</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>getfei</servlet-name>
+        <url-pattern>/getfei</url-pattern>
+    </servlet-mapping>
+
+
+
 
 
 

@@ -85,12 +85,12 @@
 <body>
 
 <div class="content">
-    <form action="">
+    <form action="getfei" method="post">
     <div style="font-size: 20px;margin-top: 20px;margin-bottom: 20px">患者信息查询</div>
 
     <span>*</span>病历号：
-    <input type="text">
-    <input class="btn iconfont" type="submit"value=" &#58904 搜索 ">
+    <input name="caseNumber" type="text">
+    <input  class="btn iconfont" type="submit"value=" &#58904 搜索 ">
 
     <div style="font-size: 20px;margin-top: 20px;margin-bottom: 20px">患者信息确认</div>
 
@@ -140,19 +140,6 @@
 
 
 
-    <%--<ul>--%>
-        <%--<li>病历号</li>--%>
-        <%--<li>姓名</li>--%>
-        <%--<li>项目名称</li>--%>
-        <%--<li>单价</li>--%>
-        <%--<li>数量</li>--%>
-        <%--<li>开立时间</li>--%>
-        <%--<li>状态</li>--%>
-    <%--</ul>--%>
-    <%--<br>--%>
-    <%--<div style="clear: left"></div>--%>
-    <%--<hr>--%>
-    <%--<div style="text-align: center;line-height: 100px">暂无数据</div>--%>
 </form>
 </div>
 </body>

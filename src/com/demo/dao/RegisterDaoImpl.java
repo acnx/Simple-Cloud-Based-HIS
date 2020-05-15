@@ -55,6 +55,7 @@ public class RegisterDaoImpl implements IregisterDao  {
           register.setRealName(rs.getString("real_name"));
           register.setIdnumber(rs.getString("idnumber"));
           register.setVisitDate(rs.getString("visit_date"));
+          register.setHomeAddress(rs.getString("home_address"));
           register.setNoon(rs.getString("noon"));
           /*数据库里面的123怎么转换为文字放到前端页面*/
           register.setDeptId(rs.getInt("dept_id"));

@@ -85,12 +85,12 @@
 <body>
 
 <div class="content">
-    <form action="">
+    <form action="getfei" method="post">
     <div style="font-size: 20px;margin-top: 20px;margin-bottom: 20px">患者信息查询</div>
 
     <span>*</span>病历号：
-    <input type="text">
-    <input class="btn iconfont" type="submit"value=" &#58904 搜索 ">
+    <input name="caseNumber" type="text">
+    <input  class="btn iconfont" type="submit"value=" &#58904 搜索 ">
 
     <div style="font-size: 20px;margin-top: 20px;margin-bottom: 20px">患者信息确认</div>
 
