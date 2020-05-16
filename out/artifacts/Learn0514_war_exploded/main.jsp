@@ -126,17 +126,17 @@
     <dl>
       <dt>挂号收费</dt>
       <dd>
-        <a href="/register"></a>现场挂号
+        <a href="/register"></a>|- 现场挂号
       </dd>
       <dd>
         <a href="/tuihao"></a>
-        退号</dd>
+        |- 退号</dd>
       <dd>
         <a href="/shoufei"></a>
-        收费</dd>
+        |- 收费</dd>
       <dd>
         <a href="/postfei"></a>
-        退费</dd>
+        L 退费</dd>
       <%--<dd>发票补打</dd>--%>
       <%--<dd>发票重打</dd>--%>
       <%--<dd>患者费用查询</dd>--%>
@@ -145,37 +145,37 @@
     </dl>
     <dl>
       <dt>门诊医生</dt>
-      <dd><a href="/jiezhen"></a>  医生接诊</dd>
-      <dd>医技处置</dd>
-      <dd>药房管理</dd>
+      <dd><a href="/jiezhen"></a> |- 医生接诊</dd>
+      <dd>|- 医技处置</dd>
+      <dd>L 药房管理</dd>
 
     </dl>
     <dl>
       <dt>医技处置</dt>
-      <dd>门诊医生</dd>
-      <dd>医技处置</dd>
-      <dd>药房管理</dd>
+      <dd>|- 门诊医生</dd>
+      <dd>|- 医技处置</dd>
+      <dd>L 药房管理</dd>
 
     </dl>
     <dl>
       <dt>药房管理</dt>
-      <dd>门诊医生</dd>
-      <dd>医技处置</dd>
-      <dd>药房管理</dd>
+      <dd>|- 门诊医生</dd>
+      <dd>|- 医技处置</dd>
+      <dd>L 药房管理</dd>
 
     </dl>
     <dl>
       <dt>财务管理</dt>
-      <dd>门诊医生</dd>
-      <dd>医技处置</dd>
-      <dd>药房管理</dd>
+      <dd>|- 门诊医生</dd>
+      <dd>|- 医技处置</dd>
+      <dd>L 药房管理</dd>
 
     </dl>
     <dl>
       <dt>系统管理</dt>
-      <dd>门诊医生</dd>
-      <dd>医技处置</dd>
-      <dd>药房管理</dd>
+      <dd>|- 门诊医生</dd>
+      <dd>|- 医技处置</dd>
+      <dd>L 药房管理</dd>
 
     </dl>
 
