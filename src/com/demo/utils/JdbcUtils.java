@@ -11,7 +11,7 @@ import java.util.List;
  * create 2020-05-13 18:06
  */
 public class JdbcUtils {
-  private static final String url = "jdbc:mysql://localhost:3306/his?useUnicode=true&characterEncoding=utf8";
+  private static final String url = "jdbc:mysql://localhost:3306/yhis?useUnicode=true&characterEncoding=utf8";
   private static final String user = "root";
   private static final String pwd = "root";
 
