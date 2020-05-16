@@ -28,24 +28,47 @@ public class LoginServlet extends HttpServlet {
     System.out.println(user);
     /**/
     if (user==null){
-      String message="输入有误，请重新输入";
+      String message=" <script>\n" +
+          "          window.alert(\"输入有误，请重新输入\");\n" +
+          "\n" +
+          "      </script>";
+
+
+
       req.setAttribute("mess",message);
       req.getRequestDispatcher("index.jsp").forward(req,resp);
 
     }else {
 //      user_type 管理员
 //      del_mark 该用户不存在
+
+      if(user.getDelMark() == 0)
+      {
+        String message=" <script>\n" +
+            "          window.alert(\"用户信息已失效，请联系管理员\");\n" +
+            "\n" +
+            "      </script>";
+
+        req.setAttribute("mess",message);
+        req.getRequestDispatcher("index.jsp").forward(req,resp);
+
+      }
+      if(user.getUserType()==1){
+        String message=" <script>\n" +
+            "          window.alert(\"尊敬的管理员用户，登录成功！\");\n" +
+            "\n" +
+            "      </script>";
+
+        req.setAttribute("mess",message);
+
+
+      }
       req.setAttribute("user",user);
       HttpSession session = req.getSession();
-
+      session.setAttribute("sessionuser",user);
       req.getRequestDispatcher("main.jsp").forward(req,resp);
 
     }
-
-
-
-
-
 
   }
 }

@@ -1,6 +1,7 @@
 package com.demo.web;
 
 import com.demo.pojo.Register;
+import com.demo.pojo.User;
 import com.demo.service.IregisterService;
 import com.demo.service.RegisterServiceImpl;
 
@@ -74,6 +75,21 @@ public class PutDataWeb extends HttpServlet {
 
     int a = service.add(register);
 //    System.out.println(a);
+
+//
+    User user = (User) req.getSession().getAttribute("sessionuser");
+    System.out.println(user.getId());
+    /*有了挂号员id 可以插入到user表*/
+
+    /*session是用来  状态管理的 Http是无状态协议*/
+
+
+
+
+
+
+
+//
     resp.sendRedirect("register");
 
 //    把获取到的表单上的值赋给对象
