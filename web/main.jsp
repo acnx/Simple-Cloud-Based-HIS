@@ -35,6 +35,7 @@
       float: left;
     }
 
+
     #content{
       background-color: #fffffe;
       height: 492px;
@@ -44,8 +45,9 @@
     .left{
       background-color: #ccc;
       width: 180px;
-      height: 500px;
+      height: 470px;
       float: left;
+      padding-top: 30px;
 
 
     }
@@ -95,7 +97,7 @@
 
     }
     #footer{
-      width: 1400px;
+      width: 1350px;
       margin-top: 20px;
       text-align: center;
     }
@@ -112,12 +114,11 @@
 <div id="header">
   <div class="Hleft">东软云HIS系统</div>
   <div class="Hright">
-    欢迎 ${userType} ${user.username} 登录
+    欢迎 [${userType}] ${user.realName} 登录 !
   </div>
   <div style="clear: left"></div>
 
 </div>
-
 
 <div id="content">
 
@@ -147,40 +148,35 @@
       <dd><a href="/jiezhen"></a>  医生接诊</dd>
       <dd>医技处置</dd>
       <dd>药房管理</dd>
-      <dd>财务管理</dd>
-      <dd>系统管理</dd>
+
     </dl>
     <dl>
       <dt>医技处置</dt>
       <dd>门诊医生</dd>
       <dd>医技处置</dd>
       <dd>药房管理</dd>
-      <dd>财务管理</dd>
-      <dd>系统管理</dd>
+
     </dl>
     <dl>
       <dt>药房管理</dt>
       <dd>门诊医生</dd>
       <dd>医技处置</dd>
       <dd>药房管理</dd>
-      <dd>财务管理</dd>
-      <dd>系统管理</dd>
+
     </dl>
     <dl>
       <dt>财务管理</dt>
       <dd>门诊医生</dd>
       <dd>医技处置</dd>
       <dd>药房管理</dd>
-      <dd>财务管理</dd>
-      <dd>系统管理</dd>
+
     </dl>
     <dl>
       <dt>系统管理</dt>
       <dd>门诊医生</dd>
       <dd>医技处置</dd>
       <dd>药房管理</dd>
-      <dd>财务管理</dd>
-      <dd>系统管理</dd>
+
     </dl>
 
 

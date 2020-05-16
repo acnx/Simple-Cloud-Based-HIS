@@ -86,7 +86,7 @@ public class LoginServlet extends HttpServlet {
 //      req.setAttribute("userType",userType);
 //      HttpSession session = req.getSession();
 //      session.setAttribute("sessionuser",user);
-      req.getRequestDispatcher("main.jsp").forward(req,resp);
+      req.getRequestDispatcher("main").forward(req,resp);
 
     }
 

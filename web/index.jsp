@@ -67,7 +67,6 @@
             alert("请输入密码");
             login.password.focus();
             return false;
-
         }
 
     }
