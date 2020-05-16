@@ -2,6 +2,7 @@
   User: Jayce
   Date: 2020/5/14
   Time: 12:47
+  注册页
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
@@ -10,7 +11,6 @@
     <title>挂号功能界面</title>
     <link rel="stylesheet" href="./static/css/iconfont.css" type="text/css">
     <style>
-
         *{
             padding: 0;
             margin: 0;
@@ -18,7 +18,6 @@
         body{
             width: 1150px;
             height: 492px;
-            /*background-color: #1299FF;*/
         }
         .content{
             padding: 10px;
@@ -44,17 +43,14 @@
         .item{
             width: 200px;
             height: 60px;
-            /*border: solid 1px black;*/
             float: left;
             margin-right: 20px;
         }
         .item1{
             width: 420px;
             height: 60px;
-            /*border: solid 1px black;*/
             float: left;
             margin-right: 20px;
-
         }
         select{
             width: 100px;
@@ -70,8 +66,6 @@
         <input type="submit" value="&#59564 挂号" class="btn iconfont">
         <input type="submit" value="&#59577 清空" class="btn iconfont">
         <div style="font-size: 20px;margin-top: 20px;margin-bottom: 20px">挂号信息</div>
-
-
         <div class="item">
             <span>*</span>病历号：<br>
             <input name="caseNumber" value="600626" type="text">
@@ -86,7 +80,6 @@
                 <option value="男">男</option>
                 <option value="女">女</option>
             </select>
-
         </div>
         <div class="item1">
             <span>*</span>年龄：<br>
@@ -105,7 +98,6 @@
         <div class="item1">
             家庭住址：<br>
             <input name="homeAddress" placeholder="请输入家庭地址" type="text" style="width: 390px">
-
         </div>
         <div class="item1">
             身份证号：<br>
@@ -154,12 +146,10 @@
                 <option value="3">李医生</option>
                 <option value="4">张医生</option>
             </select>
-
         </div>
         <div class="item">
             初始号额：<br>
             <input type="text" placeholder="初始号额">
-
         </div>
         <div class="item1">
             已用号额：<br>
@@ -168,12 +158,10 @@
         <div class="item">
             病历本：
             <input type="checkbox" name="isBook" value="1" style="height: auto;margin-top: 25px">
-
         </div>
         <div class="item">
             <span>*</span>应收金额：<br>
             <input name="money" type="text" placeholder="应收金额">
-
         </div>
         <div class="item">
             <span>*</span>收费方式：<br>

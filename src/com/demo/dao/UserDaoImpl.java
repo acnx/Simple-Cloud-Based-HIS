@@ -16,7 +16,8 @@ public class UserDaoImpl implements IuserDao {
   @Override
   public User getUser(String username, String password, Integer userType) {
     System.out.println(username +"+"+password+"+"+userType+"dao");
-    return JdbcUtils.executeQuaryOne("select * from user where username=? and password=? and user_type=?", new RowMap<User>() {
+    return JdbcUtils.executeQuaryOne(
+        "select * from user where username=? and password=? and user_type=?", new RowMap<User>() {
       @Override
       public User rowMapping(ResultSet rs) {
         User user = new User();
@@ -31,9 +32,6 @@ public class UserDaoImpl implements IuserDao {
           user.setDeptId(rs.getInt("dept_id"));
           user.setRegistLeid(rs.getInt("regist_le_id"));
           user.setDelMark(rs.getInt("del_mark"));
-
-
-
         } catch (SQLException e) {
           e.printStackTrace();
         }

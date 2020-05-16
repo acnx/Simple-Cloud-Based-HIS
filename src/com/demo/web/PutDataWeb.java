@@ -25,7 +25,6 @@ public class PutDataWeb extends HttpServlet {
   @Override
   protected void service(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
 
-//    System.out.println("执行了");
     /*获取所有register.jsp表单提交的数据*/
     String caseNumber = req.getParameter("caseNumber");
     String realName = req.getParameter("realName");
@@ -41,10 +40,6 @@ public class PutDataWeb extends HttpServlet {
     Integer deptId = Integer.parseInt(req.getParameter("deptId"));
     Integer registerLeid = Integer.parseInt(req.getParameter("registerLeid"));
     Integer userId = Integer.parseInt(req.getParameter("userId"));
-//    Integer isBook = Integer.parseInt(req.getParameter("isBook"));
-/*还没完*/
-
-
 
     String isBook = req.getParameter("isBook") ;
     if(isBook==null){
@@ -52,9 +47,7 @@ public class PutDataWeb extends HttpServlet {
     }
     Integer isbook = Integer.parseInt(isBook);
 
-
     Register register = new Register();
-
 
     register.setCaseNumber(caseNumber);
     register.setRealName(realName);
@@ -72,11 +65,8 @@ public class PutDataWeb extends HttpServlet {
     register.setUserId(userId);
     register.setIsBook(isbook);
 
-
     int a = service.add(register);
-//    System.out.println(a);
 
-//
     User user = (User) req.getSession().getAttribute("sessionuser");
     System.out.println(user.getId());
     /*有了挂号员id 可以插入到user表*/
@@ -84,12 +74,6 @@ public class PutDataWeb extends HttpServlet {
     /*session是用来  状态管理的 Http是无状态协议*/
 
 
-
-
-
-
-
-//
     resp.sendRedirect("register");
 
 //    把获取到的表单上的值赋给对象
@@ -112,18 +96,8 @@ public class PutDataWeb extends HttpServlet {
 //      e.printStackTrace();
 //    }
 //
-//
-//    /*checkbox*/
-//
-//    String isBook = req.getParameter("isBook") ;
-//    if(isBook==null){
-//      isBook="0";
-//    }
-//
-//    Integer isbook = Integer.parseInt(isBook);
-//
-//    System.out.println(isbook);
-//
+
+
 
   }
 

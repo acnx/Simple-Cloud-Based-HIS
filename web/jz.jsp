@@ -2,6 +2,7 @@
   User: Jayce
   Date: 2020/5/14
   Time: 12:49
+  医生接诊
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
@@ -17,7 +18,6 @@
         body{
             width: 1150px;
             height: 492px;
-            /*background-color: #1299FF;*/
         }
         .content{
             padding: 10px;
@@ -40,14 +40,12 @@
         .item{
             width: 200px;
             height: 60px;
-            /*border: solid 1px black;*/
             float: left;
             margin-right: 20px;
         }
         .item1{
             width: 420px;
             height: 60px;
-            /*border: solid 1px black;*/
             float: left;
             margin-right: 20px;
         }
@@ -59,21 +57,15 @@
             margin-bottom: 10px;
         }
         table{
-
             border-collapse: collapse;
-
         }
         th{
-
             color: #909399;
             padding-bottom: 10px;
         }
         td{
-
-
             text-align: center;
             padding-left: 10px;
-
         }
         a{
             text-decoration: none;color: black
@@ -106,9 +98,7 @@
             看诊状态：<br>
             <input name="visitState" value="${reg.visitState}" type="text"style="width: 275px" placeholder="看诊状态">
         </div>
-
         <div style="clear: left"></div>
-
     </form>
     <form action="yizhu" method="post">
         <div style="font-size: 20px;margin-top: 20px;margin-bottom: 20px">患者消费信息</div>
@@ -123,7 +113,6 @@
                 <th>操作</th>
             </tr>
             </thead>
-
             <tbody>
             <tr>
                 <td>
@@ -141,8 +130,6 @@
                 <td>
                     <input name="note" type="text">
                 </td>
-
-                <%--下面不对，这是收费界面--%>
                 <td>
                     <input type="submit" value="执行">
                 </td>

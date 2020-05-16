@@ -13,6 +13,7 @@ import java.io.IOException;
 /**
  * author Jayce
  * create 2020-05-15 22:24
+ * 接诊获取病人信息 Servlet
  */
 public class GetInfoWeb extends HttpServlet {
   private IregisterService service = new RegisterServiceImpl();

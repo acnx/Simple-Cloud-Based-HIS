@@ -9,6 +9,7 @@ import java.io.IOException;
 /**
  * author Jayce
  * create 2020-05-15 13:54
+ * 跳转th.jsp
  */
 public class TuiHaoWeb extends HttpServlet {
   @Override

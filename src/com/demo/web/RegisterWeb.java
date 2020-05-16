@@ -9,6 +9,7 @@ import java.io.IOException;
 /**
  * author Jayce
  * create 2020-05-14 19:21
+ * 跳转register.jsp
  */
 public class RegisterWeb extends HttpServlet {
 

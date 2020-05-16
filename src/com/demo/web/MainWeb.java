@@ -9,6 +9,7 @@ import java.io.IOException;
 /**
  * author Jayce
  * create 2020-05-16 15:39
+ * 跳转main.jsp
  */
 public class MainWeb extends HttpServlet {
   @Override

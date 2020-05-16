@@ -14,6 +14,7 @@ import java.util.HashMap;
 /**
  * author Jayce
  * create 2020-05-15 20:05
+ * 退费查询病人信息操作
  */
 public class TuiFeiCha extends HttpServlet {
   private IregisterService service = new RegisterServiceImpl();
@@ -21,7 +22,6 @@ public class TuiFeiCha extends HttpServlet {
   @Override
   protected void service(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
     String caseNumber = req.getParameter("caseNumber");
-//    System.out.println(caseNumber);
     Register register = service.getOne(caseNumber);
     req.setAttribute("reg",register);
     req.getRequestDispatcher("tf.jsp").forward(req,resp);

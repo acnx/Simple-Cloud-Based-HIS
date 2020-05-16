@@ -5,12 +5,6 @@ package com.demo.pojo;
  * create 2020-05-13 18:06
  */
 public class Register {
-
-
-//
-//  private Integer id;
-//  private String name;
-
   private Integer id;
   private String caseNumber;
   private String realName;

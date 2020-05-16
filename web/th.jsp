@@ -2,6 +2,7 @@
   User: Jayce
   Date: 2020/5/14
   Time: 12:50
+  退号
 --%>
 
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
@@ -11,7 +12,6 @@
     <title>退号</title>
     <link rel="stylesheet" href="./static/css/iconfont.css" type="text/css">
     <style>
-
         *{
             padding: 0;
             margin: 0;
@@ -19,7 +19,6 @@
         body{
             width: 1150px;
             height: 492px;
-            /*background-color: #1299FF;*/
         }
         .content{
             padding: 10px;
@@ -43,17 +42,14 @@
         .item{
             width: 200px;
             height: 60px;
-            /*border: solid 1px black;*/
             float: left;
             margin-right: 20px;
         }
         .item1{
             width: 420px;
             height: 60px;
-            /*border: solid 1px black;*/
             float: left;
             margin-right: 20px;
-
         }
         li{
             color: #787878;
@@ -62,8 +58,6 @@
             margin-left: 40px;
             margin-bottom: 10px;
         }
-
-
         table{
 
             border-collapse: collapse;
@@ -79,27 +73,20 @@
             text-align: center;
 
         }
-
         a{
             text-decoration: none;color: black
         }
-
     </style>
 </head>
 <body>
-
-
 <div class="content">
     <h3 style="text-align: center;padding-top: 20px">退号</h3>
     <form action="getRegister">
     <div style="font-size: 20px;margin-top: 20px;margin-bottom: 20px">患者信息查询</div>
-
     <span>*</span>病历号：
     <input name="caseNumber" value="${reg.caseNumber}" type="text">
     <input class="btn iconfont" type="submit"value=" &#58904 搜索">
-
     <div style="font-size: 20px;margin-top: 20px;margin-bottom: 20px">患者信息确认</div>
-
     <div class="item">
         <span>*</span>姓名：<br>
         <input name="realName" value="${reg.realName}" placeholder="姓名" type="text">
@@ -107,7 +94,6 @@
     <div class="item1">
         家庭住址：<br>
         <input name="homeAddress" value="${reg.homeAddress}" placeholder="家庭地址" type="text" style="width: 390px">
-
     </div>
     <div class="item1">
         身份证号：<br>
@@ -115,7 +101,6 @@
     </div>
     <div style="clear: left"></div>
     <div style="font-size: 20px;margin-top: 20px;margin-bottom: 20px">患者挂号信息</div>
-
         <table>
             <thead>
             <tr>
@@ -127,10 +112,8 @@
                 <th>看诊科室</th>
                 <th>看诊状态</th>
                 <th>操作</th>
-
             </tr>
             </thead>
-
             <tbody>
             <tr>
                 <td>${reg.caseNumber}</td>
@@ -147,7 +130,5 @@
 
     </form>
 </div>
-
-
 </body>
 </html>

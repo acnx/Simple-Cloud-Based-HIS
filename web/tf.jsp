@@ -2,6 +2,7 @@
   User: Jayce
   Date: 2020/5/14
   Time: 12:49
+  退费页面
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
@@ -10,7 +11,6 @@
     <title>退费</title>
     <link rel="stylesheet" href="./static/css/iconfont.css" type="text/css">
     <style>
-
         *{
             padding: 0;
             margin: 0;
@@ -18,7 +18,6 @@
         body{
             width: 1150px;
             height: 492px;
-            /*background-color: #1299FF;*/
         }
         .content{
             padding: 10px;
@@ -29,7 +28,6 @@
             padding-left: 10px;
             border: solid 1px #aaa;
         }
-
         .btn{
             background-color: #409EFF;
             height: 30px;
@@ -42,17 +40,14 @@
         .item{
             width: 200px;
             height: 60px;
-            /*border: solid 1px black;*/
             float: left;
             margin-right: 20px;
         }
         .item1{
             width: 420px;
             height: 60px;
-            /*border: solid 1px black;*/
             float: left;
             margin-right: 20px;
-
         }
         li{
             color: #787878;
@@ -61,7 +56,6 @@
             margin-left: 40px;
             margin-bottom: 10px;
         }
-
         table{
 
             border-collapse: collapse;
@@ -77,12 +71,9 @@
             text-align: center;
 
         }
-
         a{
             text-decoration: none;color: black
         }
-
-
     </style>
 </head>
 <body>
@@ -91,13 +82,10 @@
     <h3 style="text-align: center;padding-top: 20px">退费</h3>
     <form action="tuifeicha" method="post">
         <div style="font-size: 20px;margin-top: 20px;margin-bottom: 20px">患者信息查询</div>
-
         <span>*</span>病历号：
         <input name="caseNumber" type="text">
         <input  class="btn iconfont" type="submit"value=" &#58904 搜索 ">
-
         <div style="font-size: 20px;margin-top: 20px;margin-bottom: 20px">患者信息确认</div>
-
         <div class="item">
             <span>*</span>姓名：<br>
             <input name="realName" value="${reg.realName}" placeholder="姓名" type="text">
@@ -105,7 +93,6 @@
         <div class="item1">
             家庭住址：<br>
             <input name="homeAddress" value="${reg.homeAddress}" placeholder="家庭地址" type="text" style="width: 390px">
-
         </div>
         <div class="item1">
             身份证号：<br>
@@ -124,10 +111,8 @@
                 <th>开立时间</th>
                 <th>看诊状态</th>
                 <th>操作</th>
-
             </tr>
             </thead>
-
             <tbody>
             <tr>
                 <td>${reg.caseNumber}</td>
@@ -137,14 +122,10 @@
                 <td>${reg.amount}</td>
                 <td>${reg.visitDate}</td>
                 <td>${reg.visitState}</td>
-                <%--下面跳转不对--%>
                 <td><a href="/tuifeila?caseNumber=${reg.caseNumber}">退费</a></td>
             </tr>
             </tbody>
         </table>
-
-
-
     </form>
 </div>
 </body>

@@ -13,13 +13,12 @@ import java.io.IOException;
 /**
  * author Jayce
  * create 2020-05-15 22:30
+ * 医生开医嘱
  */
 public class YiZhuWeb extends HttpServlet {
   private IregisterService service = new RegisterServiceImpl();
   @Override
   protected void service(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-
-
 
     /*获取所有jz.jsp表单提交的数据*/
     String caseNumber=req.getParameter("caseNumber");
@@ -28,9 +27,7 @@ public class YiZhuWeb extends HttpServlet {
     Integer amount = Integer.parseInt(req.getParameter("amount"));
     String note = req.getParameter("note");
 
-
     Register register = new Register();
-
 
     register.setCaseNumber(caseNumber);
     register.setItem(item);

@@ -12,13 +12,13 @@ import java.io.IOException;
 /**
  * author Jayce
  * create 2020-05-15 23:42
+ * 点击收费按钮操作
  */
 public class ShouFeiLaWeb extends HttpServlet {
   private IregisterService service = new RegisterServiceImpl();
   @Override
   protected void service(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
     String caseNumber = req.getParameter("caseNumber");
-//    System.out.println(caseNumber);
     service.shoufeila(caseNumber);
     resp.sendRedirect("shoufei");
   }

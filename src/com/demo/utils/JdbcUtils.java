@@ -1,7 +1,5 @@
 package com.demo.utils;
 
-
-
 import java.sql.*;
 import java.util.ArrayList;
 import java.util.List;
@@ -9,6 +7,7 @@ import java.util.List;
 /**
  * author Jayce
  * create 2020-05-13 18:06
+ * jdbc工具类
  */
 public class JdbcUtils {
   private static final String url = "jdbc:mysql://localhost:3306/yhis?useUnicode=true&characterEncoding=utf8";
@@ -20,14 +19,19 @@ public class JdbcUtils {
   private ResultSet rs = null;
 
   static {
-//    // 使用jar包加载驱动
-//    try {
-//      new Driver();
-//    } catch (SQLException e) {
-//      e.printStackTrace();
-//    }
 
+    /*使用jar包加载驱动*/
+//    方法1
+/*
+    try {
+      new Driver();
+    } catch (SQLException e) {
+      e.printStackTrace();
+    }
 
+*/
+
+//   方法2
     try {
       Class.forName("com.mysql.jdbc.Driver");
     } catch (ClassNotFoundException e) {
@@ -36,6 +40,7 @@ public class JdbcUtils {
 
   }
 
+ /*连接数据库方法*/
   public static Connection getConnection() {
     Connection con = null;
     PreparedStatement ps = null;
@@ -46,10 +51,9 @@ public class JdbcUtils {
       e.printStackTrace();
     }
     return con;
-
   }
 
-
+  /*关闭数据库*/
   public static void close() {
     Connection con = null;
     PreparedStatement ps = null;
@@ -67,11 +71,10 @@ public class JdbcUtils {
     } catch (SQLException e) {
       e.printStackTrace();
     }
-
   }
 
   /*
-   * 增删改：只有sql语句不同
+   * 增删改方法：只有sql语句不同
    * 方法的通用性
    *
    * */
@@ -79,33 +82,24 @@ public class JdbcUtils {
     Connection con = null;
     PreparedStatement ps = null;
     ResultSet rs = null;
-
     int result = 0;
     try {
-
       con = getConnection();
       ps = con.prepareStatement(sql);
       for (int i = 0; i < obj.length; i++) {
         ps.setObject(i + 1, obj[i]);
       }
-
       result = ps.executeUpdate();
       System.out.println(result);
-
     } catch (SQLException e) {
       e.printStackTrace();
     } finally {
       close();
     }
   return result;
-
   }
 
-
-
-
-
-  //    public <T> void select(String sql,RowMap<T> rowMap, Object...obj) {
+  /*查询方法*/
   public static  <T> List<T> executeQuary(String sql, RowMap<T> rowMap, Object... obj) {
     Connection con = null;
     PreparedStatement ps = null;
@@ -136,7 +130,7 @@ public class JdbcUtils {
     return lists;
   }
 
-  //    public <T> void select(String sql,RowMap<T> rowMap, Object...obj) {
+  /*单条数据查询*/
   public static  <T> T executeQuaryOne(String sql, RowMap<T> rowMap, Object... obj) {
     Connection con = null;
     PreparedStatement ps = null;
@@ -165,7 +159,5 @@ public class JdbcUtils {
     }
     return t;
   }
-
-
 
 }
