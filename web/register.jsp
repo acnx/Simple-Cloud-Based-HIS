@@ -59,16 +59,22 @@
     </style>
 </head>
 <body>
+<script>
+    function resetForm() {
+        document.getElementById("regiForm").reset();
+        
+    }
+</script>
 <h3 style="text-align: center;padding-top: 20px">收费</h3>
 <div class="content">
-    <form action="putData" method="post">
-        <span >*</span> 发票号：<input name="fapiaohao" value="123456" type="text">
+    <form id="regiForm" action="putData" method="post">
+        <span >*</span> 发票号：<input name="fapiaohao" placeholder="123456" type="text">
         <input type="submit" value="&#59564 挂号" class="btn iconfont">
-        <input type="submit" value="&#59577 清空" class="btn iconfont">
+        <input type="submit" value="&#59577 清空" onclick="resetForm()" class="btn iconfont">
         <div style="font-size: 20px;margin-top: 20px;margin-bottom: 20px">挂号信息</div>
         <div class="item">
             <span>*</span>病历号：<br>
-            <input name="caseNumber" value="600626" type="text">
+            <input name="caseNumber" placeholder="600626" type="text">
         </div>
         <div class="item">
             <span>*</span>姓名：<br>
@@ -147,13 +153,14 @@
                 <option value="4">张医生</option>
             </select>
         </div>
+        <%--初始号额和已用号额以后再说--%>
         <div class="item">
             初始号额：<br>
-            <input type="text" placeholder="初始号额">
+            <input type="text" placeholder="87650000">
         </div>
         <div class="item1">
             已用号额：<br>
-            <input type="text" placeholder="已用号额">
+            <input type="text" placeholder="87650021">
         </div>
         <div class="item">
             病历本：

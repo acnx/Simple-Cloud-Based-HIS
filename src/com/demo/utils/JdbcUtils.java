@@ -90,7 +90,7 @@ public class JdbcUtils {
         ps.setObject(i + 1, obj[i]);
       }
       result = ps.executeUpdate();
-      System.out.println(result);
+//      System.out.println(result);
     } catch (SQLException e) {
       e.printStackTrace();
     } finally {

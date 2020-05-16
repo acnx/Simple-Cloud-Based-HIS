@@ -10,7 +10,6 @@
     <title>收费</title>
     <link rel="stylesheet" href="./static/css/iconfont.css" type="text/css">
     <style>
-
         *{
             padding: 0;
             margin: 0;
@@ -18,7 +17,6 @@
         body{
             width: 1150px;
             height: 492px;
-            /*background-color: #1299FF;*/
         }
         .content{
             padding: 10px;
@@ -29,7 +27,6 @@
             padding-left: 10px;
             border: solid 1px #aaa;
         }
-
         .btn{
             background-color: #409EFF;
             height: 30px;
@@ -42,17 +39,14 @@
         .item{
             width: 200px;
             height: 60px;
-            /*border: solid 1px black;*/
             float: left;
             margin-right: 20px;
         }
         .item1{
             width: 420px;
             height: 60px;
-            /*border: solid 1px black;*/
             float: left;
             margin-right: 20px;
-
         }
         li{
             color: #787878;
@@ -61,7 +55,6 @@
             margin-left: 40px;
             margin-bottom: 10px;
         }
-
         table{
 
             border-collapse: collapse;
@@ -75,18 +68,13 @@
             border: solid 1px #ccc;
             padding: 5px 10px;
             text-align: center;
-
         }
-
         a{
             text-decoration: none;color: black
         }
-
-
     </style>
 </head>
 <body>
-
 <div class="content">
     <h3 style="text-align: center;padding-top: 20px">收费</h3>
     <form action="getfei" method="post">
@@ -95,9 +83,7 @@
     <span>*</span>病历号：
     <input name="caseNumber" type="text">
     <input  class="btn iconfont" type="submit"value=" &#58904 搜索 ">
-
     <div style="font-size: 20px;margin-top: 20px;margin-bottom: 20px">患者信息确认</div>
-
         <div class="item">
             <span>*</span>姓名：<br>
             <input name="realName" value="${reg.realName}" placeholder="姓名" type="text">
@@ -105,7 +91,6 @@
         <div class="item1">
             家庭住址：<br>
             <input name="homeAddress" value="${reg.homeAddress}" placeholder="家庭地址" type="text" style="width: 390px">
-
         </div>
         <div class="item1">
             身份证号：<br>
@@ -124,10 +109,8 @@
             <th>开立时间</th>
             <th>看诊状态</th>
             <th>操作</th>
-
         </tr>
         </thead>
-
         <tbody>
         <tr>
             <td>${reg.caseNumber}</td>
@@ -137,14 +120,10 @@
             <td>${reg.amount}</td>
             <td>${reg.visitDate}</td>
             <td>${reg.visitState}</td>
-            <%--下面不对，这是收费界面--%>
             <td><a href="/shoufeila?caseNumber=${reg.caseNumber}">收费</a></td>
         </tr>
         </tbody>
     </table>
-
-
-
 </form>
 </div>
 </body>

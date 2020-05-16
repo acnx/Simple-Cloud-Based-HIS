@@ -15,7 +15,7 @@ public class UserDaoImpl implements IuserDao {
 
   @Override
   public User getUser(String username, String password, Integer userType) {
-    System.out.println(username +"+"+password+"+"+userType+"dao");
+//    System.out.println(username +"+"+password+"+"+userType+"dao");
     return JdbcUtils.executeQuaryOne(
         "select * from user where username=? and password=? and user_type=?", new RowMap<User>() {
       @Override

@@ -68,7 +68,7 @@ public class PutDataWeb extends HttpServlet {
     int a = service.add(register);
 
     User user = (User) req.getSession().getAttribute("sessionuser");
-    System.out.println(user.getId());
+//    System.out.println(user.getId());
     /*有了挂号员id 可以插入到user表*/
 
     /*session是用来  状态管理的 Http是无状态协议*/

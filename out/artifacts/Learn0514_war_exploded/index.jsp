@@ -2,6 +2,7 @@
   User: Jayce
   Date: 2020/5/16
   Time: 8:14
+  登录页：index
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
@@ -12,20 +13,24 @@
             padding: 0px;
             margin: 0px;
         }
-        #header{height: 70px;color: white;background-color: #1299FF;font-size: 30px;padding-left: 20px;line-height: 70px;font-weight: bold;}
+        #header{
+            height: 70px;
+            color: white;
+            background-color: #1299FF;
+            font-size: 30px;
+            padding-left: 20px;
+            line-height: 70px;
+            font-weight: bold;
+        }
         #content{
             margin-top: 80px;
             margin-left: 250px;
             width: 800px;
             height: 300px;
-
             border: solid 1px #ccc;
         }
         .left{
-
             float: left;
-
-
         }
         .left img{
             width: 350px;
@@ -37,7 +42,6 @@
             padding: 70px 20px;
             width: 350px;
             height: 250px;
-
         }
         .right input{
             margin: 2px 3px;
@@ -48,10 +52,7 @@
         .item{
             width: 300px;
             height: 50px;
-
-
         }
-
     </style>
 </head>
 <body>
@@ -75,8 +76,7 @@
 <div id="header">东软云HIS系统</div>
 <div id="content">
     <div class="left">
-        <img  src="/static/img/loginl.jpg" alt="">
-        
+        <img src="/static/img/loginl.jpg" alt="登录快乐啊">
     </div>
     <div class="right">
         <form name="login" action="login"method="post" onsubmit="return Check()">
@@ -87,10 +87,8 @@
                 密 &nbsp;  码：<input  type="password" name="password"> <br>
             </div >
             <div class="item2">
-
                 <label>
                     <input type="radio" name="userType" value="2" style="width: 20px;display: inline; height: 15px;margin-top: 5px">挂号员
-
                 </label>
                 <label>
                     <input type="radio" name="userType" value="3" style="width: 20px;display: inline;height: 15px;margin-top: 5px">医生
@@ -98,9 +96,7 @@
                 </label>
                 <label>
                     <input type="radio" name="userType" value="1" style="width: 20px;display: inline;height: 15px;margin-top: 5px">管理员
-
                 </label>
-
             </div>
             <input type="submit" value="登录" style="margin-top: 15px; width: 262px">
         </form>
@@ -109,6 +105,5 @@
 </div>
 ${mess}
 <div id="footer"></div>
-
 </body>
 </html>

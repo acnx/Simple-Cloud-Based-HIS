@@ -23,11 +23,11 @@ public class LoginServlet extends HttpServlet {
     String username = req.getParameter("username");
     String password = req.getParameter("password");
     Integer userType = Integer.parseInt(req.getParameter("userType"));
-    System.out.println(username +"+"+password+"+"+userType);
+//    System.out.println(username +"+"+password+"+"+userType);
     /*根据用户名密码数据库查询*/
     User user = service.getUser(username,password,userType);
 
-    System.out.println(user);
+//    System.out.println(user);
     /*判断用户*/
     if (user==null){
       String message=" <script> window.alert(\"输入有误，请重新输入\");</script>";
@@ -47,7 +47,7 @@ public class LoginServlet extends HttpServlet {
         req.getRequestDispatcher("index.jsp").forward(req,resp);
 
       }
-      System.out.println(user.getUserType());
+//      System.out.println(user.getUserType());
 
       /*判断用户类型*/
 //      if(user.getUserType()==1){

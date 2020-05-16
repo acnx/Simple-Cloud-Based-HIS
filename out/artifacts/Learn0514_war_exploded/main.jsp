@@ -2,6 +2,7 @@
   User: Jayce
   Date: 2020/5/14
   Time: 11:58
+  框架
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
@@ -24,7 +25,6 @@
       font-weight: bold;
       line-height: 70px;
       float: left;
-
     }
     .Hright{
       font-size: 20px;
@@ -34,13 +34,10 @@
 
       float: left;
     }
-
-
     #content{
       background-color: #fffffe;
       height: 492px;
       width: 1360px;
-
     }
     .left{
       background-color: #ccc;
@@ -48,12 +45,6 @@
       height: 470px;
       float: left;
       padding-top: 30px;
-
-
-    }
-    dl{
-      /*background-color: #ECEDED;*/
-
     }
     dd:hover {
       background-color: rgba(18, 153, 255, 0.22);
@@ -61,7 +52,6 @@
     dt:hover{
       background-color: rgba(18, 153, 255, 0.27);
     }
-
     dt{
       background-color: #c7c8c8;
       width: 180px;
@@ -72,7 +62,6 @@
       text-align: center;
       font-weight: bold;
       font-size: 20px;
-
     }
     dd{
       background-color: #e7e8e8;
@@ -83,9 +72,6 @@
       border: solid 1px #ccc;
       padding-left: 70px;
       display: none;
-
-
-
     }
     .right{
       width: 1150px;
@@ -94,18 +80,12 @@
       height: 498px;
       border: solid 1px #ccc;
       padding-left: 20px;
-
     }
     #footer{
       width: 1350px;
       margin-top: 20px;
       text-align: center;
     }
-
-
-
-
-
   </style>
 
 </head>
@@ -137,11 +117,7 @@
       <dd>
         <a href="/postfei"></a>
         L 退费</dd>
-      <%--<dd>发票补打</dd>--%>
-      <%--<dd>发票重打</dd>--%>
-      <%--<dd>患者费用查询</dd>--%>
-      <%--<dd>*日结</dd>--%>
-      <%--<dd>*日结查询</dd>--%>
+
     </dl>
     <dl>
       <dt>门诊医生</dt>
@@ -178,12 +154,8 @@
       <dd>L 药房管理</dd>
 
     </dl>
-
-
-
   </div>
   <div class="right">
-    <!--<iframe src="" width="1200px" height="492px"></iframe>-->
     <iframe frameborder='0' scrolling='auto' style='width:1150px;height:100%' src="welcome.jsp"></iframe>
   </div>
 
@@ -208,8 +180,6 @@
     })
 </script>
 
-
 </body>
-
 
 </html>

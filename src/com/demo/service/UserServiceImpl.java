@@ -12,7 +12,7 @@ public class UserServiceImpl implements IuserService {
   private IuserDao dao = new UserDaoImpl();
   @Override
   public User getUser(String username, String password, Integer userType) {
-    System.out.println(username +"+"+password+"+"+userType+"sevice");
+//    System.out.println(username +"+"+password+"+"+userType+"sevice");
     return dao.getUser(username,password,userType);
   }
 }

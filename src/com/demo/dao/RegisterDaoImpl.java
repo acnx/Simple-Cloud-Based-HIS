@@ -44,7 +44,7 @@ public class RegisterDaoImpl implements IregisterDao  {
     return JdbcUtils.executeQuaryOne("select * from register where case_number = ?", new RowMap<Register>() {
       @Override
       public Register rowMapping(ResultSet rs) {
-      Register register = new Register();
+        Register register = new Register();
         try {
           register.setCaseNumber(rs.getString("case_number"));
           register.setRealName(rs.getString("real_name"));
