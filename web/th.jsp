@@ -80,7 +80,7 @@
 </head>
 <body>
 <div class="content">
-    <h3 style="text-align: center;padding-top: 20px">退号</h3>
+    <h2 style="padding-left: 10px;padding-top: 20px">退号</h2>
     <form action="getRegister">
     <div style="font-size: 20px;margin-top: 20px;margin-bottom: 20px">患者信息查询</div>
     <span>*</span>病历号：
@@ -123,7 +123,9 @@
                 <td>${reg.homeAddress}</td>
                 <td>${reg.noon}</td>
                 <td>${reg.visitState}</td>
-                <td><a href="/tui?caseNumber=${reg.caseNumber}">退号</a></td>
+                <td><a href="/tui?caseNumber=${reg.caseNumber}&visitState=${reg.visitState}">退号</a></td>
+                <%--如果已经进行诊断，不能退号--%>
+                ${mess}
             </tr>
             </tbody>
         </table>

@@ -76,7 +76,7 @@
 </head>
 <body>
 <div class="content">
-    <h3 style="text-align: center;padding-top: 20px">收费</h3>
+    <h2 style="padding-left: 10px;padding-top: 20px">收费</h2>
     <form action="getfei" method="post">
     <div style="font-size: 20px;margin-top: 20px;margin-bottom: 20px">患者信息查询</div>
 

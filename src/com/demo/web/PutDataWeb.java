@@ -49,6 +49,7 @@ public class PutDataWeb extends HttpServlet {
 
     Register register = new Register();
 
+
     register.setCaseNumber(caseNumber);
     register.setRealName(realName);
     register.setGender(gender);
@@ -64,6 +65,11 @@ public class PutDataWeb extends HttpServlet {
     register.setRegistLeid(registerLeid);
     register.setUserId(userId);
     register.setIsBook(isbook);
+
+
+//    System.out.println(register);
+
+
 
     int a = service.add(register);
 

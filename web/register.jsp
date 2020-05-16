@@ -65,7 +65,7 @@
         
     }
 </script>
-<h3 style="text-align: center;padding-top: 20px">收费</h3>
+<h2 style="padding-left: 10px;padding-top: 20px">现场挂号</h2>
 <div class="content">
     <form id="regiForm" action="putData" method="post">
         <span >*</span> 发票号：<input name="fapiaohao" placeholder="123456" type="text">

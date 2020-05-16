@@ -12,6 +12,7 @@ public class RegisterServiceImpl implements IregisterService {
   private IregisterDao dao = new RegisterDaoImpl();
   @Override
   public int add(Register register) {
+
     return dao.add(register);
   }
 

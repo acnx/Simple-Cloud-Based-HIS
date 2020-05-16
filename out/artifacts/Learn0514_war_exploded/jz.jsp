@@ -30,7 +30,7 @@
         }
         .btn{
             background-color: #409EFF;
-            height: 30px;
+            height: 25px;
             width: 90px;
             color: #fff;
         }
@@ -75,7 +75,7 @@
 <body>
 
 <div class="content">
-    <h3 style="text-align: center">接诊</h3>
+    <h2 style="padding-left: 10px;">接诊</h2>
     <form action="getinfo" method="post">
         <div style="font-size: 20px;margin-top: 20px;margin-bottom: 20px">患者信息查询</div>
 

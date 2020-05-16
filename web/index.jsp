@@ -71,7 +71,6 @@
         }
 
     }
-
 </script>
 <div id="header">欢迎使用东软云HIS系统，请登录</div>
 <div id="content">

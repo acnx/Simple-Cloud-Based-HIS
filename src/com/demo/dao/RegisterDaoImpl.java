@@ -16,6 +16,7 @@ public class RegisterDaoImpl implements IregisterDao  {
 
   @Override
   public int add(Register register) {
+
     return JdbcUtils.executeUpdate(
         "insert into register" +
             "(case_number,real_name,gender,age,age_type,birth_date,home_address,idnumber,settle_id," +

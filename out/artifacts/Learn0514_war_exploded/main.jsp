@@ -27,7 +27,7 @@
       float: left;
     }
     .Hright{
-      font-size: 20px;
+      font-size: 16px;
       color: white;
       padding-top: 40px;
       padding-left: 850px;
@@ -161,7 +161,7 @@
 
 </div>
 <div id="footer">
-  版权所有 翻版必究 Copyright2020 段晶晶同学
+  版权所有 翻版必究 Copyright 2020 段晶晶同学
 </div>
 <script src="./static/js/jquery-3.5.1.min.js"></script>
 <script>

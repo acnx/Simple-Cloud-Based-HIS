@@ -18,8 +18,17 @@ public class TuiWeb extends HttpServlet {
   private IregisterService service = new RegisterServiceImpl();
   @Override
   protected void service(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-    String caseNumber = req.getParameter("caseNumber");
-    service.updateOne(caseNumber);
-    resp.sendRedirect("tuihao");
+    int visitState = Integer.parseInt(req.getParameter("visitState"));
+    System.out.println(visitState);
+    if(visitState==1){
+      String message=" <script> window.alert(\"已就医，不能退号\");</script>";
+      req.setAttribute("mess",message);
+      resp.sendRedirect("tuihao");
+    }else {
+      String caseNumber = req.getParameter("caseNumber");
+      service.updateOne(caseNumber);
+      resp.sendRedirect("tuihao");
+    }
+
   }
 }
