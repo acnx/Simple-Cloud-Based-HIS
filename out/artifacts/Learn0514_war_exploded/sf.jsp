@@ -36,6 +36,9 @@
             width: 90px;
             color: #fff;
         }
+        .btn:hover{
+            background-color: rgba(64, 158, 255, 0.4);
+        }
         .item{
             width: 200px;
             height: 60px;
@@ -85,7 +88,7 @@
 <body>
 
 <div class="content">
-    <h3 style="text-align: center">收费</h3>
+    <h3 style="text-align: center;padding-top: 20px">收费</h3>
     <form action="getfei" method="post">
     <div style="font-size: 20px;margin-top: 20px;margin-bottom: 20px">患者信息查询</div>
 

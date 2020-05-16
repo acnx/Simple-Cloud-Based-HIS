@@ -34,6 +34,9 @@
             width: 90px;
             color: #fff;
         }
+        .btn:hover{
+            background-color: rgba(64, 158, 255, 0.4);
+        }
         .item{
             width: 200px;
             height: 60px;

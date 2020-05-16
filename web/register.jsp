@@ -63,6 +63,7 @@
     </style>
 </head>
 <body>
+<h3 style="text-align: center;padding-top: 20px">收费</h3>
 <div class="content">
     <form action="putData" method="post">
         <span >*</span> 发票号：<input name="fapiaohao" value="123456" type="text">

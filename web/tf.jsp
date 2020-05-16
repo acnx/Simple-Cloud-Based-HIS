@@ -88,7 +88,7 @@
 <body>
 
 <div class="content">
-    <h3 style="text-align: center">退费</h3>
+    <h3 style="text-align: center;padding-top: 20px">退费</h3>
     <form action="tuifeicha" method="post">
         <div style="font-size: 20px;margin-top: 20px;margin-bottom: 20px">患者信息查询</div>
 

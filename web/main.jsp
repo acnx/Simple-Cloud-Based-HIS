@@ -30,8 +30,7 @@
       font-size: 20px;
       color: white;
       padding-top: 40px;
-      padding-left: 900px;
-
+      padding-left: 850px;
 
       float: left;
     }
@@ -113,7 +112,7 @@
 <div id="header">
   <div class="Hleft">东软云HIS系统</div>
   <div class="Hright">
-    欢迎${user.userType} ${user.username}登录
+    欢迎 ${userType} ${user.username} 登录
   </div>
   <div style="clear: left"></div>
 
@@ -189,7 +188,7 @@
   </div>
   <div class="right">
     <!--<iframe src="" width="1200px" height="492px"></iframe>-->
-    <iframe frameborder='0' scrolling='auto' style='width:1150px;height:100%' src=""></iframe>
+    <iframe frameborder='0' scrolling='auto' style='width:1150px;height:100%' src="welcome.jsp"></iframe>
   </div>
 
 </div>

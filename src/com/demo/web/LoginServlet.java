@@ -25,6 +25,12 @@ public class LoginServlet extends HttpServlet {
     System.out.println(username +"+"+password+"+"+userType);
 /*根据用户名密码数据库查询*/
     User user = service.getUser(username,password,userType);
+
+
+
+
+
+
     System.out.println(user);
     /**/
     if (user==null){
@@ -53,19 +59,33 @@ public class LoginServlet extends HttpServlet {
         req.getRequestDispatcher("index.jsp").forward(req,resp);
 
       }
-      if(user.getUserType()==1){
-        String message=" <script>\n" +
-            "          window.alert(\"尊敬的管理员用户，登录成功！\");\n" +
-            "\n" +
-            "      </script>";
-
-        req.setAttribute("mess",message);
-
-
-      }
+      System.out.println(user.getUserType());
+//      if(user.getUserType()==1){
+//        String message=" <script>\n" +
+//            "          window.alert(\"尊敬的管理员用户，登录成功！\");\n" +
+//            "\n" +
+//            "      </script>";
+//
+//        req.setAttribute("mess",message);
+//
+//      }
       req.setAttribute("user",user);
-      HttpSession session = req.getSession();
-      session.setAttribute("sessionuser",user);
+
+      if(user.getUserType()==1){
+        String userTypeto = "管理员";
+        req.setAttribute("userType",userTypeto);
+      }else if(user.getUserType()==2){
+        String userTypeto = "挂号员";
+        req.setAttribute("userType",userTypeto);
+      }else if(user.getUserType()==3){
+        String userTypeto = "医生";
+        req.setAttribute("userType",userTypeto);
+      }
+
+
+//      req.setAttribute("userType",userType);
+//      HttpSession session = req.getSession();
+//      session.setAttribute("sessionuser",user);
       req.getRequestDispatcher("main.jsp").forward(req,resp);
 
     }
