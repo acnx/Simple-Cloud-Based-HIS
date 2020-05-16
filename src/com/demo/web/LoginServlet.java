@@ -20,9 +20,14 @@ public class LoginServlet extends HttpServlet {
   private IuserService service = new UserServiceImpl();
   @Override
   protected void service(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+    String ute = req.getParameter("userType");
+    if(ute==null){
+      ute = "1";
+    }
     String username = req.getParameter("username");
     String password = req.getParameter("password");
-    Integer userType = Integer.parseInt(req.getParameter("userType"));
+    Integer userType = Integer.parseInt(ute);
+
 //    System.out.println(username +"+"+password+"+"+userType);
     /*根据用户名密码数据库查询*/
     User user = service.getUser(username,password,userType);

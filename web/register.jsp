@@ -70,7 +70,7 @@
     <form id="regiForm" action="putData" method="post">
         <span >*</span> 发票号：<input name="fapiaohao" placeholder="123456" type="text">
         <input type="submit" value="&#59564 挂号" class="btn iconfont">
-        <input type="submit" value="&#59577 清空" onclick="resetForm()" class="btn iconfont">
+        <input type="button" value="&#59577 清空" onclick="resetForm()" class="btn iconfont">
         <div style="font-size: 20px;margin-top: 20px;margin-bottom: 20px">挂号信息</div>
         <div class="item">
             <span>*</span>病历号：<br>

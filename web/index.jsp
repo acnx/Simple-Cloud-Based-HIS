@@ -57,15 +57,15 @@
 </head>
 <body>
 <%----%>
-<script language="JavaScript">
+<script>
     function Check() {
         if(login.username.value()==""){
-            alert("请输入用户名");
+            window.alert("请输入用户名");
             login.username.focus();
             return false;
         }
         if(login.password.value()==""){
-            alert("请输入密码");
+            window.alert("请输入密码");
             login.password.focus();
             return false;
         }
@@ -73,13 +73,13 @@
     }
 
 </script>
-<div id="header">东软云HIS系统</div>
+<div id="header">欢迎使用东软云HIS系统，请登录</div>
 <div id="content">
     <div class="left">
         <img src="/static/img/loginl.jpg" alt="登录快乐啊">
     </div>
     <div class="right">
-        <form name="login" action="login"method="post" onsubmit="return Check()">
+        <form name="login" action="login" method="post">
             <div class="item">
                 用户名：<input  type="text" name="username"> <br>
             </div>
@@ -98,7 +98,7 @@
                     <input type="radio" name="userType" value="1" style="width: 20px;display: inline;height: 15px;margin-top: 5px">管理员
                 </label>
             </div>
-            <input type="submit" value="登录" style="margin-top: 15px; width: 262px">
+            <input type="submit"  onclick="Check()" value="登录" style="margin-top: 15px; width: 262px">
         </form>
     </div>
 
