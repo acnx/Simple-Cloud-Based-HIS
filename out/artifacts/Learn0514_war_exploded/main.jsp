@@ -13,12 +13,8 @@
     *{margin: 0;padding: 0;}
     #header{
       height: 70px;
-
+      width: auto;
       background-color: #1299FF;
-
-
-
-
     }
 
     .Hleft{
@@ -43,12 +39,13 @@
     #content{
       background-color: #fffffe;
       height: 492px;
-      width: 1800px;
+      width: 1360px;
+
     }
     .left{
-      /*background-color: #ccc;*/
+      background-color: #ccc;
       width: 180px;
-      height: 492px;
+      height: 500px;
       float: left;
 
 
@@ -56,6 +53,12 @@
     dl{
       /*background-color: #ECEDED;*/
 
+    }
+    dd:hover {
+      background-color: rgba(18, 153, 255, 0.22);
+    }
+    dt:hover{
+      background-color: rgba(18, 153, 255, 0.27);
     }
 
     dt{
@@ -84,11 +87,12 @@
 
     }
     .right{
-      width: 1200px;
-      /*background-color: aquamarine;*/
+      width: 1150px;
+      background-color: #fbfbfb;
       float: left;
-      height: 492px;
+      height: 498px;
       border: solid 1px #ccc;
+      padding-left: 20px;
 
     }
     #footer{
@@ -185,7 +189,7 @@
   </div>
   <div class="right">
     <!--<iframe src="" width="1200px" height="492px"></iframe>-->
-    <iframe frameborder='0' scrolling='auto' style='width:100%;height:100%' src=""></iframe>
+    <iframe frameborder='0' scrolling='auto' style='width:1150px;height:100%' src=""></iframe>
   </div>
 
 </div>

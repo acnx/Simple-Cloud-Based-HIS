@@ -15,7 +15,7 @@
             margin: 0;
         }
         body{
-            width: 1200px;
+            width: 1150px;
             height: 492px;
             /*background-color: #1299FF;*/
         }
@@ -33,6 +33,9 @@
             height: 30px;
             width: 90px;
             color: #fff;
+        }
+        .btn:hover{
+            background-color: rgba(64, 158, 255, 0.4);
         }
         .item{
             width: 200px;

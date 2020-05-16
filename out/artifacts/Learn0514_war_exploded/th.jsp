@@ -17,7 +17,7 @@
             margin: 0;
         }
         body{
-            width: 1200px;
+            width: 1150px;
             height: 492px;
             /*background-color: #1299FF;*/
         }
