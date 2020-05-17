@@ -8,6 +8,8 @@
 <html>
 <head>
     <title>云HIS系统登录</title>
+    <link rel="shortcut icon" href=" /static/img/favicon.ico" />
+
     <style>
         *{
             padding: 0px;
@@ -21,6 +23,10 @@
             padding-left: 20px;
             line-height: 70px;
             font-weight: bold;
+        }
+        #header img{
+            width: 35px;
+            height: 30px;
         }
         #content{
             margin-top: 80px;
@@ -81,7 +87,9 @@
 
     }
 </script>
-<div id="header">欢迎使用东软云HIS系统，请登录</div>
+<div id="header">
+    <img  src="/static/img/logo.png" alt="">
+    欢迎使用东软云HIS系统，请登录</div>
 <div id="content">
     <div class="left">
         <img src="/static/img/loginl.jpg" alt="登录快乐啊">

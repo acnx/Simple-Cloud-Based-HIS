@@ -9,7 +9,8 @@
 <head>
   <meta charset="UTF-8">
   <title>东软云HIS系统</title>
-  <link rel="stylesheet" href="./static/css/iconfont.css" type="text/css">
+    <link rel="shortcut icon" href=" /static/img/favicon.ico" />
+    <link rel="stylesheet" href="./static/css/iconfont.css" type="text/css">
   <style>
     *{margin: 0;padding: 0;}
     #header{
@@ -25,11 +26,15 @@
       line-height: 70px;
       float: left;
     }
+    .Hleft img{
+        width: 35px;
+        height: 30px;
+    }
     .Hright{
       font-size: 16px;
       color: white;
       padding-top: 40px;
-      padding-left: 850px;
+      padding-left: 820px;
 
       float: left;
     }
@@ -94,7 +99,10 @@
 <body>
 
 <div id="header">
-  <div class="Hleft">东软云HIS系统</div>
+  <div class="Hleft">
+      <img  src="/static/img/logo.png" alt="">
+      东软云HIS系统
+  </div>
   <div class="Hright">
     欢迎 [${userType}] ${user.realName} 登录 ! <a href="index.jsp"> [登出]</a>
   </div>
@@ -163,7 +171,7 @@
 
 </div>
 <div id="footer">
-  版权所有 翻版必究 Copyright 2020 段晶晶同学
+    Copyright © 2020 Jayce. All Rights Reserved. 段晶晶同学 版权所有 翻版必究
 </div>
 <script src="./static/js/jquery-3.5.1.min.js"></script>
 <script>

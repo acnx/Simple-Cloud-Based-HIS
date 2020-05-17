@@ -2,12 +2,14 @@
   User: Jayce
   Date: 2020/5/16
   Time: 8:14
-  登录页：index
+  登录页：index1.2
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <head>
     <title>云HIS系统登录</title>
+    <link rel="shortcut icon" href=" /static/img/favicon.ico" />
+
     <style>
         *{
             padding: 0px;
@@ -21,6 +23,10 @@
             padding-left: 20px;
             line-height: 70px;
             font-weight: bold;
+        }
+        #header img{
+            width: 35px;
+            height: 30px;
         }
         #content{
             margin-top: 80px;
@@ -54,6 +60,14 @@
             width: 300px;
             height: 50px;
         }
+        .item2 label{
+            padding-right: 13px;
+        }
+        #footer{
+            width: 1350px;
+            margin-top: 35px;
+            text-align: center;
+        }
     </style>
 </head>
 <body>
@@ -73,7 +87,9 @@
 
     }
 </script>
-<div id="header">欢迎使用东软云HIS系统，请登录</div>
+<div id="header">
+    <img  src="/static/img/logo.png" alt="">
+    欢迎使用东软云HIS系统，请登录</div>
 <div id="content">
     <div class="left">
         <img src="/static/img/loginl.jpg" alt="登录快乐啊">
@@ -88,22 +104,23 @@
             </div >
             <div class="item2">
                 <label>
-                    <input type="radio" name="userType" value="2" style="width: 20px;display: inline; height: 15px;margin-top: 5px">挂号员
+                    <input type="radio" name="userType" value="2" style="width: 24px;display: inline; height: 15px;margin-top: 5px">挂号员
                 </label>
                 <label>
-                    <input type="radio" name="userType" value="3" style="width: 20px;display: inline;height: 15px;margin-top: 5px">医生
+                    <input type="radio" name="userType" value="3" style="width: 24px;display: inline;height: 15px;margin-top: 5px">医生
 
                 </label>
                 <label>
-                    <input type="radio" name="userType" value="1" style="width: 20px;display: inline;height: 15px;margin-top: 5px">管理员
+                    <input type="radio" name="userType" value="1" style="width: 24px;display: inline;height: 15px;margin-top: 5px">管理员
                 </label>
             </div>
-            <input type="submit"  onclick="Check()" value="登录" style="margin-top: 15px; width: 262px">
+            <input type="submit"  onclick="Check()" value="登录" style="margin-top: 26px; width: 262px">
         </form>
     </div>
 
 </div>
+<div style="clear: both"></div>
 ${mess}
-<div id="footer"></div>
+<div id="footer">Copyright © 2020 Jayce. All Rights Reserved. 段晶晶同学 版权所有 翻版必究</div>
 </body>
 </html>

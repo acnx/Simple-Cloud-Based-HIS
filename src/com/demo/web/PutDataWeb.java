@@ -25,9 +25,6 @@ public class PutDataWeb extends HttpServlet {
   @Override
   protected void service(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
 
-
-
-
     /*获取所有register.jsp表单提交的数据*/
     String caseNumber = req.getParameter("caseNumber");
     String realName = req.getParameter("realName");
