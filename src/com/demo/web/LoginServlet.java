@@ -35,7 +35,7 @@ public class LoginServlet extends HttpServlet {
 //    System.out.println(user);
     /*判断用户*/
     if (user==null){
-      String message=" <script> window.alert(\"输入有误，请重新输入\");</script>";
+      String message=" <script> window.alert(\"用户名或密码输入有误，请重新输入\");</script>";
       req.setAttribute("mess",message);
       req.getRequestDispatcher("index.jsp").forward(req,resp);
 

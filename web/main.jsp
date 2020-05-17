@@ -163,7 +163,7 @@
 
 </div>
 <div id="footer">
-  版权所有 翻版必究 Copyright 2020 段晶晶同学
+    Copyright © 2020 Jayce. All Rights Reserved. 段晶晶同学 版权所有 翻版必究
 </div>
 <script src="./static/js/jquery-3.5.1.min.js"></script>
 <script>

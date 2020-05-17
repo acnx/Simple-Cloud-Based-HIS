@@ -54,6 +54,14 @@
             width: 300px;
             height: 50px;
         }
+        .item2 label{
+            padding-right: 13px;
+        }
+        #footer{
+            width: 1350px;
+            margin-top: 35px;
+            text-align: center;
+        }
     </style>
 </head>
 <body>
@@ -88,22 +96,23 @@
             </div >
             <div class="item2">
                 <label>
-                    <input type="radio" name="userType" value="2" style="width: 20px;display: inline; height: 15px;margin-top: 5px">挂号员
+                    <input type="radio" name="userType" value="2" style="width: 24px;display: inline; height: 15px;margin-top: 5px">挂号员
                 </label>
                 <label>
-                    <input type="radio" name="userType" value="3" style="width: 20px;display: inline;height: 15px;margin-top: 5px">医生
+                    <input type="radio" name="userType" value="3" style="width: 24px;display: inline;height: 15px;margin-top: 5px">医生
 
                 </label>
                 <label>
-                    <input type="radio" name="userType" value="1" style="width: 20px;display: inline;height: 15px;margin-top: 5px">管理员
+                    <input type="radio" name="userType" value="1" style="width: 24px;display: inline;height: 15px;margin-top: 5px">管理员
                 </label>
             </div>
-            <input type="submit"  onclick="Check()" value="登录" style="margin-top: 15px; width: 262px">
+            <input type="submit"  onclick="Check()" value="登录" style="margin-top: 26px; width: 262px">
         </form>
     </div>
 
 </div>
+<div style="clear: both"></div>
 ${mess}
-<div id="footer"></div>
+<div id="footer">Copyright © 2020 Jayce. All Rights Reserved. 段晶晶同学 版权所有 翻版必究</div>
 </body>
 </html>
